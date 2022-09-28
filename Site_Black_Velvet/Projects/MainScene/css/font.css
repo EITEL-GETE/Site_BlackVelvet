@@ -1,0 +1,14 @@
+@font-face {
+	font-family: "Light";
+	src: url("../fonts/Nimbus Sans Light.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: "Ultra Light";
+	src: url("../fonts/Nimbus Sans UltraLight.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: "Simple Text";
+	src: url("../fonts/Pragmatica-ExtraLight.ttf") format('truetype');
+}

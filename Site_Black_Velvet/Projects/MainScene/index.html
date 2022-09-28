@@ -1,39 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌵</text></svg>">
-  <meta name="viewport" content="width=device-width, user-scalable=no">
+<html lang="fr">
+	<head>
+		<title>Black Velvet</title>
+		<meta charset="utf-8"/>
+		<link rel="shortcut icon" type="image/x-icon" href="./images/logo.png"/>
+		<link rel="stylesheet" type="text/css" href="./css/colors.css">
+		<link rel="stylesheet" type="text/css" href="./css/font.css">
+		<link rel="stylesheet" type="text/css" href="./css/default.css">
+		<link rel="stylesheet" type="text/css" href="./css/global.css">
+		<link rel="stylesheet" href="./src/styles/style.css">
+	</head>
 
-  <title></title>
-  <meta name="description" content="">
+	<body class="width_full height_full">
+		<header>
+			<div class="portrait"><div class="center bold">HEADER PORTRAIT</div></div>
+			<div class="landscape"><div class="center bold">HEADER LANDSCAPE</div></div>
+		</header>
 
-  <meta name="twitter:site" content="" /> 
-  <meta name="twitter:card" content="player" />
-  <meta name="twitter:player" content="" />
-  <meta name="twitter:player:width" content="480" />
-  <meta name="twitter:player:height" content="480" />
-  
+        <script>
+            // hack for simple-peer
+            window.global = window;
+            var parcelRequire;
+        </script>
+        <script type="module" src="./src/generated/gen.js"></script>
+        <script type="module" src="./src/main.ts"></script>
 
-  <meta property="twitter:image" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:title" content="" />
-  <meta property="og:description" content="" />
+        <div id="main">
+            <needle-engine id="needle"></needle-engine>
+        </div>
 
-  <link rel="stylesheet" href="./src/styles/style.css">
-</head>
+		<div id="content" class="width_100 height_100">
+			<div class="portrait width_100 height_100">
+				<div id="panel-bot" class="width_100 height_50"><div class="center bold">PANEL</div></div>
+			</div>
+			<div class="landscape width_100 height_100">
+				<div id="panel-left" class="width_30 height_100"><div class="center bold">LEFT PANEL</div></div>
+				<div id="panel-right" class="width_30 height_100"><div class="center bold">RIGHT PANEL</div></div>
+			</div>
+		</div>
 
-<body>
-  <script>
-    // hack for simple-peer
-    window.global = window;
-    var parcelRequire;
-  </script>
-  <script type="module" src="./src/generated/gen.js"></script>
-  <script type="module" src="./src/main.ts"></script>
+		<footer>
+			<div class="portrait"><div class="center bold">FOOTER PORTRAIT</div></div>
+			<div class="landscape"><div class="center bold">FOOTER LANDSCAPE</div></div>
+		</footer>
+	</body>
 
-  <div id="main">
-    <needle-engine></needle-engine> 
-  </div>
-</body>
 </html>
