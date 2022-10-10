@@ -2,10 +2,10 @@ import { Behaviour, serializeable } from "@needle-tools/engine";
 
 export class RotateModule extends Behaviour {
     
-    maxVelocity : number = 2;
+    maxVelocity : number = 15;
     currentVelocity : number = 0;
-    velocityDamping : number = .01;
-    accelerationMultiplier : number = .1;
+    velocityDamping : number = .2;
+    accelerationMultiplier : number = 5;
     directionMultiplier : number = 0;
 
     update(){
