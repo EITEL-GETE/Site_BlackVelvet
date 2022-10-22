@@ -1,6 +1,6 @@
 html             {
     scrollbar-width: thin;
-    scrollbar-color: var(--secondColor) var(--mainColor);
+    scrollbar-color: var(--mainColor) var(--mainColorDark);
 }
 
 body             { margin: 0; padding: 0; }
@@ -14,10 +14,21 @@ body             { margin: 0; padding: 0; }
 .center          { position: absolute; margin: 0; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 .no_select       { cursor: default; }
 .no_select::selection {  }
+.perspective     { perspective: 800px; transform-style: preserve-3d; }
+.shadowed        { filter: drop-shadow(0 0 10px #000a); }
+.outline         {
+    filter: drop-shadow(0 0 5px #fff);
+}
 
 .tr_up_10        { transform: rotateX(10deg);  }
 .tr_up_20        { transform: rotateX(20deg);  }
 .tr_up_30        { transform: rotateX(30deg);  }
+.tr_rg_10        { transform: rotateY(10deg);  }
+.tr_rg_20        { transform: rotateY(20deg);  }
+.tr_rg_30        { transform: rotateY(30deg);  }
+.tr_lf_10        { transform: rotateY(-10deg); }
+.tr_lf_20        { transform: rotateY(-20deg); }
+.tr_lf_30        { transform: rotateY(-30deg); }
 .tr_down_10      { transform: rotateX(-10deg); }
 .tr_down_20      { transform: rotateX(-20deg); }
 .tr_down_30      { transform: rotateX(-30deg); }
@@ -29,6 +40,9 @@ body             { margin: 0; padding: 0; }
 .justify_center  { justify-content: center;        }
 .justify_start   { justify-content: start;         }
 .justify_end     { justify-content: end;           }
+.align_start     { align-items: flex-start;        }
+.align_center    { align-items: center;            }
+.align_end       { align-items: flex-end;          }
 
 .width_full      { width: 100vw;     }
 .width_auto      { width: auto;      }
@@ -51,6 +65,7 @@ body             { margin: 0; padding: 0; }
 .height_auto     { height: auto;  }
 .height_120      { height: 120%;  }
 .height_100      { height: 100%;  }
+.height_90       { height: 90%;   }
 .height_80       { height: 80%;   }
 .height_70       { height: 70%;   }
 .height_50p      { height: 50px;  }
@@ -66,6 +81,7 @@ body             { margin: 0; padding: 0; }
 
 .margin_top_1    { margin-top: 1vw;     }
 .margin_top_100p { margin-top: 100px;   }
+.margin_top_75p  { margin-top: 75px;    }
 .margin_top_50p  { margin-top: 50px;    }
 .margin_top_20p  { margin-top: 20px;    }
 .margin_top_10p  { margin-top: 10px;    }

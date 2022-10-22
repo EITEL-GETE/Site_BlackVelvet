@@ -1,27 +1,14 @@
 :root {
-	/* GLOBAL */
-    --color_Main:              #ffffff;
-    --color_Second:            #5555ff;
-    /* INTERACTABLE */
-    --color_InterMain:         #2255ff;
-    --color_InterSecond:       #1144cc;
-    --color_InterHighlight:    #4499ff;
-    /* COLOR */
-    --color_White:             #dddddd;
-    --color_Black:             #000000;
-    --color_GreyAlpha:         #222222aa;
-    --color_Grey:              #222222;
-    --color_LightGrey:         #444444;
-    --color_LighterGrey:       #666666;
-    --color_Blue:              #2255ff;
-    --color_DarkBlue:          #1144ff;
-    --color_Orange:            #ffaa00;
     /* SIMPLE COLORS */
-    --mainColor:               #1A7399;
-    --mainColorAlpha:          #1A739988;
-    --mainColorDark:           #002c46;
-    --secondColor:             #FF9800;
-    --secondColorDark:         #CA7902;
+    --mainColor:               #7d0027;
+    --mainColorAlpha:          #7d002755;
+    --mainColorDark:           #200000;
+    --secondColor:             #faf98b;
+    --secondColorAlpha:        #faf98b55;
+    --secondColorDark:         #faf98b;
+    --text:                    #ffffff;
+    --title:                   #007a84;
+    
     --mauve:                   #624963;
 	--blue:                    #007bff;
 	--indigo:                  #6610f2;
