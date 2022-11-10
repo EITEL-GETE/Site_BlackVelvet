@@ -5,28 +5,32 @@ a                            { text-decoration: none; color: var(--title); }
 a:hover                      { text-decoration: underline; }
 
 /*--- HEADER ---*/
-header>.landscape            { z-index: 999; position: fixed; margin: 10px; top: 0; width: 100%; height: 70px; background-color: var(--background); color: var(--text); }
-header>.landscape #l-drawing { height: 100px; }
-header>.landscape #l-title   { height: 50px; }
-header>.portrait             { z-index: 999; position: fixed; margin: 10px; top: 0; width: 100%; height: 70px; background-color: var(--background); color: var(--text); }
-header>.portrait #l-drawing  { height: 100px; }
-header>.portrait #l-title    { height: 50px; }
+header>.landscape            { z-index: 999; position: fixed; top: 0; width: 100%; height: 70px; background-color: var(--background); color: var(--text); }
+header>.landscape #l-drawing { height: 100px; margin: 10px; }
+header>.landscape #l-title   { height: 50px; margin: 10px; }
+header>.portrait             { z-index: 999; position: fixed; top: 0; width: 100%; height: 70px; background-color: var(--background); color: var(--text); }
+header>.portrait #l-drawing  { height: 100px; margin: 10px; }
+header>.portrait #l-title    { height: 50px; margin: 10px; }
 
 /*--- FOOTER ---*/
 footer>.landscape            { height: 130px; background-color: var(--mainColorDark); }
 
 /*--- CONTENT ---*/
 #content                     { position: relative; z-index: 998; }
-#content h1                  { font-size: 4em; transform: scaleX(1.2); color: var(--secondColor); filter: drop-shadow(0 0 10px var(--black)); }
+#content h1                  { font-size: 3em; letter-spacing: 1px; transform: scaleX(1.2); color: var(--secondColor); filter: drop-shadow(0 0 10px var(--black)); }
+#content h2                  { font-size: 3em; letter-spacing: 1px; color: var(--secondColor); margin: 10px; }
 #content p                   { text-align: justify; }
-#content .mainPic            { box-shadow: 0 0 25px #0005; }
+#content #mainPic            { box-shadow: 0 0 25px #0005; }
 #content #panelBG            { position: absolute; }
-#content .bump               { width: 200px; opacity: 1; filter: sepia(1) saturate(2); }
+#content .bump               { width: 200px; filter: sepia(1) saturate(2); }
 #content .mVert              { transform: scaleY(-1); }
 #content .mHori              { transform: scaleX(-1); }
-#content .r90                { transform: rotateZ(90deg); }
+#content .r90                { transform: rotateZ( 90deg); }
 #content .r180               { transform: rotateZ(180deg); }
 #content .r270               { transform: rotateZ(270deg); }
+#content .user               { box-shadow: 0 0 10px #0005; border-radius: 30px; border-top: double 10px var(--mainColorAlpha); border-bottom: double 10px var(--mainColorAlpha); }
+#content .userPara           { font-size: 5em; margin: 0; color: var(--secondColor); }
+#content .userImg            { width: 70px; filter: sepia(1) saturate(7); }
 
 div[class^="panel"]          { background-color: #0003; border-radius: 60px; border-top: double 10px var(--mainColorAlpha); border-bottom: double 10px var(--mainColorAlpha); }
 .panel-left                  { left:  0; }
