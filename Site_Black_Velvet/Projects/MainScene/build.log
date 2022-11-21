@@ -8,15 +8,25 @@
 
 vite v2.6.4 building for production...
 transforming...
-✓ 295 modules transformed.
+✓ 300 modules transformed.
 rendering chunks...
-dist/assets/Pragmatica-ExtraLight.eae763a1.ttf    92.34 KiB
-dist/assets/Nimbus Sans UltraLight.c3657399.ttf   27.57 KiB
-dist/assets/Nimbus Sans Light.cf93c368.ttf        25.50 KiB
-dist/index.html                                   1.56 KiB
-dist/assets/index.1dcb1e42.css                    5.42 KiB / gzip: 1.83 KiB
-dist/assets/index.abef476d.js                     538.96 KiB / gzip: 150.21 KiB
-dist/assets/vendor.92285dd9.js                    2961.58 KiB / gzip: 983.57 KiB
+dist/assets/logo_drawing_square.650ec4bd.png       699.54 KiB
+dist/assets/logo_title.fb0cd2de.png                29.99 KiB
+dist/assets/logo_drawing.a4626dce.png              576.40 KiB
+dist/assets/corner.6f4c9e1d.png                    24.22 KiB
+dist/assets/center.8f0b2815.png                    26.29 KiB
+dist/assets/room0.238ca409.png                     95.32 KiB
+dist/assets/Pragmatica-ExtraLight.eae763a1.ttf     92.34 KiB
+dist/assets/Ayres.0473b1ed.ttf                     101.95 KiB
+dist/assets/Cano.9b1283fa.otf                      21.12 KiB
+dist/assets/UltraCondensedSansSerif.3e40353e.ttf   42.66 KiB
+dist/assets/PoetsenOne-Regular.85b9c540.ttf        168.41 KiB
+dist/assets/Nimbus Sans UltraLight.c3657399.ttf    27.57 KiB
+dist/assets/Nimbus Sans Light.cf93c368.ttf         25.50 KiB
+dist/index.html                                    8.56 KiB
+dist/assets/index.847d885d.css                     7.90 KiB / gzip: 2.42 KiB
+dist/assets/index.6ea6544d.js                      588.67 KiB / gzip: 162.29 KiB
+dist/assets/vendor.f69bc2a3.js                     3033.00 KiB / gzip: 1000.10 KiB
 
 > my-project@1.0.0 copy-files
 > copy-files-from-to
@@ -76,7 +86,7 @@ Starting copy operation in "default" mode:
 > npm run pack-gltf --prefix node_modules/@needle-tools/engine
 
 
-> @needle-tools/engine@1.0.0-pre pack-gltf
+> @needle-tools/engine@2.45.0-pre pack-gltf
 > node node_modules/@needle-tools/gltf-transform-extensions/index.mjs
 
 Failed parsing commandline args
@@ -116,50 +126,50 @@ toktx:texture(19/22): Slots → [metallicRoughnessTexture]
 toktx:texture(20/22): Slots → [baseColorTexture]
 toktx:texture(21/22): Slots → []
 toktx:texture(22/22): Slots → []
-toktx:texture(4/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_3.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_3.jpg
-toktx:texture(5/22): Spawning → toktx --genmipmap --bcmp --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_4.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_4.jpg
-toktx:texture(9/22): Spawning → toktx --genmipmap --bcmp --normal_mode --input_swizzle rgb1 --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_8.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_8.jpg
-toktx:texture(11/22): Spawning → toktx --genmipmap --bcmp --normal_mode --input_swizzle rgb1 --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_10.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_10.jpg
-toktx:texture(8/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_7.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_7.jpg
-toktx:texture(10/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_9.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_9.jpg
-toktx:texture(12/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_11.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_11.jpg
-toktx:texture(19/22): Spawning → toktx --genmipmap --bcmp --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_18.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_18.jpg
-toktx:texture(22/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_21.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_21.png
-toktx:texture(17/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_16.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_16.png
-toktx:texture(7/22): Spawning → toktx --genmipmap --bcmp --normal_mode --input_swizzle rgb1 --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_6.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_6.jpg
-toktx:texture(14/22): Spawning → toktx --genmipmap --bcmp --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_13.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_13.jpg
-toktx:texture(18/22): Spawning → toktx --genmipmap --bcmp --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_17.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_17.jpg
-toktx:texture(20/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_19.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_19.jpg
-toktx:texture(6/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_5.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_5.jpg
-toktx:texture(1/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_0.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_0.jpg
-toktx:texture(13/22): Spawning → toktx --genmipmap --bcmp --normal_mode --input_swizzle rgb1 --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_12.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_12.jpg
-toktx:texture(3/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_2.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_2.jpg
-toktx:texture(2/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_1.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_1.jpg
-toktx:texture(16/22): Spawning → toktx --genmipmap --bcmp --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_15.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_15.jpg
+toktx:texture(4/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_3.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_3.jpg
+toktx:texture(5/22): Spawning → toktx --genmipmap --bcmp --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_4.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_4.jpg
+toktx:texture(9/22): Spawning → toktx --genmipmap --bcmp --normal_mode --input_swizzle rgb1 --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_8.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_8.jpg
+toktx:texture(10/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_9.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_9.jpg
+toktx:texture(8/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_7.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_7.jpg
+toktx:texture(11/22): Spawning → toktx --genmipmap --bcmp --normal_mode --input_swizzle rgb1 --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_10.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_10.jpg
+toktx:texture(12/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_11.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_11.jpg
+toktx:texture(19/22): Spawning → toktx --genmipmap --bcmp --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_18.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_18.jpg
+toktx:texture(17/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_16.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_16.png
+toktx:texture(22/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_21.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_21.png
+toktx:texture(7/22): Spawning → toktx --genmipmap --bcmp --normal_mode --input_swizzle rgb1 --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_6.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_6.jpg
+toktx:texture(14/22): Spawning → toktx --genmipmap --bcmp --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_13.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_13.jpg
+toktx:texture(18/22): Spawning → toktx --genmipmap --bcmp --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_17.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_17.jpg
+toktx:texture(20/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_19.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_19.jpg
+toktx:texture(6/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_5.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_5.jpg
+toktx:texture(1/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_0.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_0.jpg
+toktx:texture(13/22): Spawning → toktx --genmipmap --bcmp --normal_mode --input_swizzle rgb1 --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_12.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_12.jpg
+toktx:texture(2/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_1.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_1.jpg
+toktx:texture(3/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_2.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_2.jpg
+toktx:texture(16/22): Spawning → toktx --genmipmap --bcmp --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_15.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_15.jpg
+toktx:texture(15/22): Spawning → toktx --genmipmap --bcmp --normal_mode --input_swizzle rgb1 --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_14.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/2GrMVp_14.jpg
 toktx:texture(22/22): 692 Bytes → 1.07 KB bytes
-toktx:texture(15/22): Spawning → toktx --genmipmap --bcmp --normal_mode --input_swizzle rgb1 --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_14.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_14.jpg
 toktx:texture(19/22): 25.05 KB → 6.4 KB bytes
 toktx:texture(17/22): 386.55 KB → 44.53 KB bytes
-toktx:texture(18/22): 566.51 KB → 97.75 KB bytes
+toktx:texture(18/22): 764.05 KB → 106.69 KB bytes
 toktx:texture(20/22): 707.59 KB → 155.66 KB bytes
-toktx:texture(5/22): 128.87 KB → 40.9 KB bytes
-toktx:texture(9/22): 93.16 KB → 4.13 KB bytes
-toktx:texture(11/22): 118.16 KB → 11.32 KB bytes
+toktx:texture(9/22): 104.28 KB → 6.7 KB bytes
 toktx:texture(10/22): 85.64 KB → 7.58 KB bytes
-toktx:texture(7/22): 653.5 KB → 162.3 KB bytes
-toktx:texture(12/22): 415.68 KB → 89.01 KB bytes
+toktx:texture(11/22): 124.05 KB → 13.68 KB bytes
+toktx:texture(5/22): 128.87 KB → 40.9 KB bytes
 toktx:texture(4/22): 66.17 KB → 1.91 KB bytes
 toktx:texture(14/22): 599.48 KB → 132.24 KB bytes
+toktx:texture(7/22): 619.92 KB → 163.12 KB bytes
 toktx:texture(8/22): 456.61 KB → 127.68 KB bytes
 toktx:texture(16/22): 2.26 MB → 409.17 KB bytes
-toktx:texture(13/22): 2 MB → 407.56 KB bytes
+toktx:texture(13/22): 2.02 MB → 412.35 KB bytes
+toktx:texture(12/22): 415.68 KB → 89.01 KB bytes
+toktx:texture(1/22): 1.92 MB → 420.93 KB bytes
 toktx:texture(6/22): 1.3 MB → 275.92 KB bytes
 toktx:texture(2/22): 2.43 MB → 524.51 KB bytes
-toktx:texture(1/22): 1.92 MB → 420.93 KB bytes
 toktx:texture(3/22): 2.41 MB → 531.25 KB bytes
-toktx:texture(15/22): 5.9 MB → 915.68 KB bytes
+toktx:texture(15/22): 5.89 MB → 919.41 KB bytes
 [KHR_draco_mesh_compression] Compression options: {"method":1,"encodeSpeed":5,"decodeSpeed":5,"quantizationBits":{"POSITION":14,"NORMAL":10,"COLOR":8,"TEX_COORD":12,"GENERIC":12},"quantizationVolume":"mesh"}
-[KHR_draco_mesh_compression] Compressed 31 primitives.
+[KHR_draco_mesh_compression] Compressed 33 primitives.
 WRITE NEEDLE_gameobject_data
 WRITE NEEDLE_components
 WRITE NEEDLE_persistent_assets
