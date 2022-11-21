@@ -1,0 +1,169 @@
+
+> my-project@1.0.0 build:production
+> npm run build:dev && npm run pack-gltf
+
+
+> my-project@1.0.0 build:dev
+> tsc && vite build && npm run copy-files
+
+vite v2.6.4 building for production...
+transforming...
+✓ 295 modules transformed.
+rendering chunks...
+dist/assets/Pragmatica-ExtraLight.eae763a1.ttf    92.34 KiB
+dist/assets/Nimbus Sans UltraLight.c3657399.ttf   27.57 KiB
+dist/assets/Nimbus Sans Light.cf93c368.ttf        25.50 KiB
+dist/index.html                                   1.56 KiB
+dist/assets/index.1dcb1e42.css                    5.42 KiB / gzip: 1.83 KiB
+dist/assets/index.abef476d.js                     538.96 KiB / gzip: 150.21 KiB
+dist/assets/vendor.92285dd9.js                    2961.58 KiB / gzip: 983.57 KiB
+
+> my-project@1.0.0 copy-files
+> copy-files-from-to
+
+Reading copy instructions from file package.json
+
+Starting copy operation in "default" mode:
+ ✓ Copied [binary] assets/sceneRoot.glb to dist/assets/sceneRoot.glb
+ ✓ Copied [ utf8 ] node_modules/@needle-tools/engine/include/console/ConsoleReroute.js to dist/include/console/ConsoleReroute.js
+ ✓ Copied [ utf8 ] node_modules/@needle-tools/engine/include/draco/draco_decoder.js to dist/include/draco/draco_decoder.js
+ ✓ Copied [binary] node_modules/@needle-tools/engine/include/draco/draco_decoder.wasm to dist/include/draco/draco_decoder.wasm
+ ✓ Copied [ utf8 ] node_modules/@needle-tools/engine/include/ktx2/basis_transcoder.js to dist/include/ktx2/basis_transcoder.js
+ ✓ Copied [binary] node_modules/@needle-tools/engine/include/ktx2/basis_transcoder.wasm to dist/include/ktx2/basis_transcoder.wasm
+ ✓ Copied [ utf8 ] node_modules/@needle-tools/engine/include/three/ARButton.js to dist/include/three/ARButton.js
+ ✓ Copied [ utf8 ] node_modules/@needle-tools/engine/include/three/DragControls.js to dist/include/three/DragControls.js
+ ✓ Copied [ utf8 ] node_modules/@needle-tools/engine/include/three/EXT_mesh_gpu_instancing_exporter.js to dist/include/three/EXT_mesh_gpu_instancing_exporter.js
+ ✓ Copied [ utf8 ] node_modules/@needle-tools/engine/include/three/VRButton.js to dist/include/three/VRButton.js
+ ✓ Copied [binary] node_modules/@needle-tools/engine/include/three-mesh-ui-assets/backspace.png to dist/include/three-mesh-ui-assets/backspace.png
+ ✓ Copied [binary] node_modules/@needle-tools/engine/include/three-mesh-ui-assets/enter.png to dist/include/three-mesh-ui-assets/enter.png
+ ✓ Copied [binary] node_modules/@needle-tools/engine/include/three-mesh-ui-assets/shift.png to dist/include/three-mesh-ui-assets/shift.png
+ ✓ Already exists include/console/ConsoleReroute.js
+ ✓ Already exists include/draco/draco_decoder.js
+ ✓ Already exists include/draco/draco_decoder.wasm
+ ✓ Already exists include/ktx2/basis_transcoder.js
+ ✓ Already exists include/ktx2/basis_transcoder.wasm
+ ✓ Already exists include/three/ARButton.js
+ ✓ Already exists include/three/DragControls.js
+ ✓ Already exists include/three/EXT_mesh_gpu_instancing_exporter.js
+ ✓ Already exists include/three/VRButton.js
+ ✓ Already exists include/three-mesh-ui-assets/backspace.png
+ ✓ Already exists include/three-mesh-ui-assets/enter.png
+ ✓ Already exists include/three-mesh-ui-assets/shift.png
+ ✓ Already exists dist/include/console/ConsoleReroute.js
+ ✓ Already exists dist/include/draco/draco_decoder.js
+ ✓ Already exists dist/include/draco/draco_decoder.wasm
+ ✓ Copied [ utf8 ] include/fonts/arial-bold-italic-msdf.json to dist/include/fonts/arial-bold-italic-msdf.json
+ ✓ Copied [binary] include/fonts/arial-bold-italic.png to dist/include/fonts/arial-bold-italic.png
+ ✓ Copied [ utf8 ] include/fonts/arial-bold-msdf.json to dist/include/fonts/arial-bold-msdf.json
+ ✓ Copied [binary] include/fonts/arial-bold.png to dist/include/fonts/arial-bold.png
+ ✓ Copied [ utf8 ] include/fonts/arial-italic-msdf.json to dist/include/fonts/arial-italic-msdf.json
+ ✓ Copied [binary] include/fonts/arial-italic.png to dist/include/fonts/arial-italic.png
+ ✓ Copied [ utf8 ] include/fonts/arial-msdf.json to dist/include/fonts/arial-msdf.json
+ ✓ Copied [binary] include/fonts/arial.png to dist/include/fonts/arial.png
+ ✓ Copied [binary] include/fonts/Roboto-Regular-msdf.png to dist/include/fonts/Roboto-Regular-msdf.png
+ ✓ Copied [ utf8 ] include/fonts/Roboto-Regular.json to dist/include/fonts/Roboto-Regular.json
+ ✓ Already exists dist/include/ktx2/basis_transcoder.js
+ ✓ Already exists dist/include/ktx2/basis_transcoder.wasm
+ ✓ Already exists dist/include/three/ARButton.js
+ ✓ Already exists dist/include/three/DragControls.js
+ ✓ Already exists dist/include/three/EXT_mesh_gpu_instancing_exporter.js
+ ✓ Already exists dist/include/three/VRButton.js
+ ✓ Already exists dist/include/three-mesh-ui-assets/backspace.png
+ ✓ Already exists dist/include/three-mesh-ui-assets/enter.png
+ ✓ Already exists dist/include/three-mesh-ui-assets/shift.png
+
+> my-project@1.0.0 pack-gltf
+> npm run pack-gltf --prefix node_modules/@needle-tools/engine
+
+
+> @needle-tools/engine@1.0.0-pre pack-gltf
+> node node_modules/@needle-tools/gltf-transform-extensions/index.mjs
+
+Failed parsing commandline args
+You can define a toktx search path by adding --toktxPath <path> to the command line. The command may appear multiple times
+Debug false
+Prefix basepath: D:\Site3D\Site_BlackVelvet\Site_Black_Velvet\Projects\MainScene
+GLB files in D:\Site3D\Site_BlackVelvet\Site_Black_Velvet\Projects\MainScene\dist\assets: [
+  'D:/Site3D/Site_BlackVelvet/Site_Black_Velvet/Projects/MainScene/dist/assets/sceneRoot.glb'
+]
+now packing: D:/Site3D/Site_BlackVelvet/Site_Black_Velvet/Projects/MainScene/dist/assets/sceneRoot.glb
+READ NEEDLE_gameobject_data
+READ NEEDLE_components
+READ NEEDLE_persistent_assets
+READ NEEDLE_lightmaps
+READ NEEDLE_lighting_settings
+READ EXT_texture_exr
+toktx: Found KTX-Software v4.1.0-rc3.
+toktx:texture(1/22): Slots → [baseColorTexture]
+toktx:texture(2/22): Slots → [baseColorTexture]
+toktx:texture(3/22): Slots → [baseColorTexture]
+toktx:texture(4/22): Slots → [baseColorTexture]
+toktx:texture(5/22): Slots → [metallicRoughnessTexture]
+toktx:texture(6/22): Slots → [baseColorTexture]
+toktx:texture(7/22): Slots → [normalTexture]
+toktx:texture(8/22): Slots → [baseColorTexture]
+toktx:texture(9/22): Slots → [normalTexture]
+toktx:texture(10/22): Slots → [baseColorTexture]
+toktx:texture(11/22): Slots → [normalTexture]
+toktx:texture(12/22): Slots → [baseColorTexture]
+toktx:texture(13/22): Slots → [normalTexture]
+toktx:texture(14/22): Slots → [diffuseTexture]
+toktx:texture(15/22): Slots → [normalTexture]
+toktx:texture(16/22): Slots → [diffuseTexture]
+toktx:texture(17/22): Slots → [baseColorTexture]
+toktx:texture(18/22): Slots → [metallicRoughnessTexture]
+toktx:texture(19/22): Slots → [metallicRoughnessTexture]
+toktx:texture(20/22): Slots → [baseColorTexture]
+toktx:texture(21/22): Slots → []
+toktx:texture(22/22): Slots → []
+toktx:texture(4/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_3.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_3.jpg
+toktx:texture(5/22): Spawning → toktx --genmipmap --bcmp --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_4.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_4.jpg
+toktx:texture(9/22): Spawning → toktx --genmipmap --bcmp --normal_mode --input_swizzle rgb1 --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_8.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_8.jpg
+toktx:texture(11/22): Spawning → toktx --genmipmap --bcmp --normal_mode --input_swizzle rgb1 --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_10.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_10.jpg
+toktx:texture(8/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_7.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_7.jpg
+toktx:texture(10/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_9.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_9.jpg
+toktx:texture(12/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_11.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_11.jpg
+toktx:texture(19/22): Spawning → toktx --genmipmap --bcmp --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_18.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_18.jpg
+toktx:texture(22/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_21.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_21.png
+toktx:texture(17/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_16.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_16.png
+toktx:texture(7/22): Spawning → toktx --genmipmap --bcmp --normal_mode --input_swizzle rgb1 --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_6.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_6.jpg
+toktx:texture(14/22): Spawning → toktx --genmipmap --bcmp --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_13.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_13.jpg
+toktx:texture(18/22): Spawning → toktx --genmipmap --bcmp --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_17.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_17.jpg
+toktx:texture(20/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_19.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_19.jpg
+toktx:texture(6/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_5.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_5.jpg
+toktx:texture(1/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_0.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_0.jpg
+toktx:texture(13/22): Spawning → toktx --genmipmap --bcmp --normal_mode --input_swizzle rgb1 --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_12.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_12.jpg
+toktx:texture(3/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_2.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_2.jpg
+toktx:texture(2/22): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_1.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_1.jpg
+toktx:texture(16/22): Spawning → toktx --genmipmap --bcmp --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_15.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_15.jpg
+toktx:texture(22/22): 692 Bytes → 1.07 KB bytes
+toktx:texture(15/22): Spawning → toktx --genmipmap --bcmp --normal_mode --input_swizzle rgb1 --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_14.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/DGgr46_14.jpg
+toktx:texture(19/22): 25.05 KB → 6.4 KB bytes
+toktx:texture(17/22): 386.55 KB → 44.53 KB bytes
+toktx:texture(18/22): 566.51 KB → 97.75 KB bytes
+toktx:texture(20/22): 707.59 KB → 155.66 KB bytes
+toktx:texture(5/22): 128.87 KB → 40.9 KB bytes
+toktx:texture(9/22): 93.16 KB → 4.13 KB bytes
+toktx:texture(11/22): 118.16 KB → 11.32 KB bytes
+toktx:texture(10/22): 85.64 KB → 7.58 KB bytes
+toktx:texture(7/22): 653.5 KB → 162.3 KB bytes
+toktx:texture(12/22): 415.68 KB → 89.01 KB bytes
+toktx:texture(4/22): 66.17 KB → 1.91 KB bytes
+toktx:texture(14/22): 599.48 KB → 132.24 KB bytes
+toktx:texture(8/22): 456.61 KB → 127.68 KB bytes
+toktx:texture(16/22): 2.26 MB → 409.17 KB bytes
+toktx:texture(13/22): 2 MB → 407.56 KB bytes
+toktx:texture(6/22): 1.3 MB → 275.92 KB bytes
+toktx:texture(2/22): 2.43 MB → 524.51 KB bytes
+toktx:texture(1/22): 1.92 MB → 420.93 KB bytes
+toktx:texture(3/22): 2.41 MB → 531.25 KB bytes
+toktx:texture(15/22): 5.9 MB → 915.68 KB bytes
+[KHR_draco_mesh_compression] Compression options: {"method":1,"encodeSpeed":5,"decodeSpeed":5,"quantizationBits":{"POSITION":14,"NORMAL":10,"COLOR":8,"TEX_COORD":12,"GENERIC":12},"quantizationVolume":"mesh"}
+[KHR_draco_mesh_compression] Compressed 31 primitives.
+WRITE NEEDLE_gameobject_data
+WRITE NEEDLE_components
+WRITE NEEDLE_persistent_assets
+WRITE NEEDLE_lightmaps
+WRITE NEEDLE_lighting_settings
+WRITE EXT_texture_exr
+packing done D:/Site3D/Site_BlackVelvet/Site_Black_Velvet/Projects/MainScene/dist/assets/sceneRoot.glb

@@ -10,8 +10,10 @@ export class RotateCentralobj extends Behaviour {
 
     update(){
         // GET MOUSEWHEEL
-        document.addEventListener( 'mousewheel', (event) => {
+        document.addEventListener( 'scroll', (event) => {
 
+            if(event == null)
+                return;
             this.currentVelocity += this.accelerationMultiplier;
             if (this.currentVelocity > this.maxVelocity)
                 this.currentVelocity = this.maxVelocity;
