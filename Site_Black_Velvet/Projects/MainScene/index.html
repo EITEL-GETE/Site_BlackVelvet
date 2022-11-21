@@ -3,7 +3,7 @@
 	<head>
 		<title>Black Velvet</title>
 		<meta charset="utf-8"/>
-		<link rel="shortcut icon" type="image/x-icon" href="./images/logo.png"/>
+		<link rel="shortcut icon" type="image/x-icon" href="./images/logo_drawing_square.png"/>
 		<link rel="stylesheet" type="text/css" href="./css/colors.css">
 		<link rel="stylesheet" type="text/css" href="./css/font.css">
 		<link rel="stylesheet" type="text/css" href="./css/default.css">
@@ -13,8 +13,18 @@
 
 	<body class="width_full height_full">
 		<header>
-			<div class="portrait"><div class="center bold">HEADER PORTRAIT</div></div>
-			<div class="landscape"><div class="center bold">HEADER LANDSCAPE</div></div>
+			<div class="portrait">
+				<div class="flex_row justify_end">
+					<img id="l-title"   class="outline" src="./images/logo_title.png">
+					<img id="l-drawing" class="outline" src="./images/logo_drawing.png">
+				</div>
+			</div>
+			<div class="landscape">
+				<div class="flex_row justify_end">
+					<img id="l-title"   class="outline" src="./images/logo_title.png">
+					<img id="l-drawing" class="outline" src="./images/logo_drawing.png">
+				</div>
+			</div>
 		</header>
 
         <script>
@@ -29,13 +39,66 @@
             <needle-engine id="needle"></needle-engine>
         </div>
 
-		<div id="content" class="width_100 height_100">
+		<div id="content" class="width_100 height_100 transition">
 			<div class="portrait width_100 height_100">
-				<div id="panel-bot" class="width_100 height_50"><div class="center bold">PANEL</div></div>
+				<div class="width_100 height_100 flex_column justify_center">
+					<div class="panel-bot width_100 height_50"></div>
+				</div>
 			</div>
+
 			<div class="landscape width_100 height_100">
-				<div id="panel-left" class="width_30 height_100"><div class="center bold">LEFT PANEL</div></div>
-				<div id="panel-right" class="width_30 height_100"><div class="center bold">RIGHT PANEL</div></div>
+				<div class="width_50 height_100 flex_column justify_center">
+					<div class="panel-left width_100 height_90 flex_column justify_between">
+						<div id="panelBG" class="width_50 height_90 flex_column justify_between">
+							<div class="width_100 flex_row justify_between">
+								<img class="bump mVert" src="./images/bump/corner.png">
+								<img class="bump r180" src="./images/bump/center.png">
+								<img class="bump r180" src="./images/bump/corner.png">
+							</div>
+							<div class="width_100 flex_row justify_between">
+								<img class="bump" src="./images/bump/corner.png">
+								<img class="bump" src="./images/bump/center.png">
+								<img class="bump mHori" src="./images/bump/corner.png">
+							</div>
+						</div>
+
+						<div class="width_100 height_100 flex_column justify_start">
+
+							<h1 id="title" class="f-ayres margin_top_100p">SALLE : Playa ou bien ?</h1>
+							<div class="width_90 height_100 flex_row justify_start align_start">
+								
+								<div class="flex_column justify_start width_50 height_100">
+									<p id="description" class="f-simpleText"><span class="bold">Description :</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+									<div class="flex_column justify_center width_70 user margin_top_20p">
+										<h2 class="f-ayres">Capacité :</h2>
+										<div class="width_60 flex_row justify_between">
+											<p class="userPara f-ayres">5x </p>
+											<img class="userImg" src="./images/icons/user.png">
+										</div>
+									</div>
+
+								</div>
+							
+								<div class="width_50 height_100 flex_column justify_start">
+									<img id="mainPic" class="width_90" src="./images/rooms/room0.png">
+
+									<div id="b-reserve" class="margin_top_50p transition">
+										<div class="width_100 height_100">
+											<div class="width_100 flex_row justify_between">
+												<img src="./images/bump/corner.png">
+												<img class="r180" src="./images/bump/corner.png">
+											</div>
+										</div>
+										<div class="width_100 height_100 flex_column justify_center">
+											<p class="f-ayres bold transition">RÉSERVER</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -44,5 +107,38 @@
 			<div class="landscape"><div class="center bold">FOOTER LANDSCAPE</div></div>
 		</footer>
 	</body>
+
+	<script>
+    	content      = document.getElementById("content");
+    	mainPic      = document.getElementById("mainPic");
+    	title        = document.getElementById("title");
+    	description  = document.getElementById("description");
+    	titles       = [ "Plage", "Cyber", "Le Bar", "Virtualium" ];
+    	descriptions = [
+    		"Salle de karaoke sur le thème des vacances à la plage. Plongez vos pieds dans le sable chaud et profitez.",
+    		"Salle de karaoke dans un thème Cyber Punk. Préparer vos voies synthétiques pour un show haut en couleurs.",
+    		"Rejoignez notre salon au style baroque et goutez nos meilleurs breuvages.",
+    		"Dans cet environnement expérimental, vous pouvez organiser toutes sortes d'évenements."
+    	];
+
+    	function SetPanelState(state){
+    		value = state ? "0" : "-110%";
+    		content.style.transform = "translateX(" + value + ")";
+    	}
+
+    	function SetRoom(room){
+    		mainPic.src           = "./images/rooms/room" + room + ".png";
+    		title.innerHTML       = titles[room];
+    		description.innerHTML = "<span class='bold'>Description :</span> " + descriptions[room];
+    	}
+
+    	function SelectRoom(room, state){
+    		SetRoom(room);
+    		SetPanelState(state);
+    	}
+
+    	SelectRoom(0, true);
+
+    </script>
 
 </html>
