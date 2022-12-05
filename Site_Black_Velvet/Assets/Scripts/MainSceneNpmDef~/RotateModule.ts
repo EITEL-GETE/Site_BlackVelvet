@@ -9,15 +9,28 @@ export class RotateModule extends Behaviour {
     directionMultiplier : number = 0;
 
     update(){
+    let isDone: boolean = false;
         // GET MOUSEWHEEL
-        document.addEventListener( 'mousewheel', (event) => {
-
+        document.addEventListener( 'wheel', (event) => {
+            isDone = true;
             this.currentVelocity += this.accelerationMultiplier;
             if (this.currentVelocity > this.maxVelocity)
                 this.currentVelocity = this.maxVelocity;
 
             this.directionMultiplier = event.deltaY / Math.abs(event.deltaY);
         });
+        
+        if(!isDone)
+        {
+            document.addEventListener( 'mousewheel', (event) => {
+                this.currentVelocity += this.accelerationMultiplier;
+                if (this.currentVelocity > this.maxVelocity)
+                    this.currentVelocity = this.maxVelocity;
+    
+                this.directionMultiplier = event.deltaY / Math.abs(event.deltaY);
+            });
+        }
+        
 
         // DO MOVEMENTS
         this.gameObject.rotateY(  -5/10000 * this.currentVelocity * this.directionMultiplier);

@@ -8,22 +8,32 @@ export class RotateCentralobj extends Behaviour {
     accelerationMultiplier : number = .1;
     directionMultiplier : number = 0;
 
-    update(){
+   update(){
+          let isDone: boolean = false;
         // GET MOUSEWHEEL
-        document.addEventListener( 'scroll', (event) => {
-
-            if(event == null)
-                return;
+        document.addEventListener( 'wheel', (event) => {
+            isDone = true;
             this.currentVelocity += this.accelerationMultiplier;
             if (this.currentVelocity > this.maxVelocity)
                 this.currentVelocity = this.maxVelocity;
 
             this.directionMultiplier = event.deltaY / Math.abs(event.deltaY);
         });
+        
+        if(!isDone)
+        {
+            document.addEventListener( 'mousewheel', (event) => {
+                this.currentVelocity += this.accelerationMultiplier;
+                if (this.currentVelocity > this.maxVelocity)
+                    this.currentVelocity = this.maxVelocity;
+    
+                this.directionMultiplier = event.deltaY / Math.abs(event.deltaY);
+            });
+        }
 
         // DO MOVEMENTS
         this.gameObject.rotateY(  -5/10000 * this.currentVelocity * this.directionMultiplier);
-        this.gameObject.translateY(-6/10000 * this.currentVelocity * this.directionMultiplier);
+        this.gameObject.translateY(6/10000 * this.currentVelocity * this.directionMultiplier);
 
         // DO DAMPING
         if (this.currentVelocity > 0)
