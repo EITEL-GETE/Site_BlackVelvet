@@ -66,7 +66,12 @@
 
 						<div class="width_100 height_100 flex_column justify_start">
 
-							<h1 id="l-title" class="f-ayres margin_top_100p">SALLE : Playa ou bien ?</h1>
+							<div class="flex_row width_50 justify_between margin_top_100p">
+								<div class="room-button flex_column justify_center transition" onclick="SetNextRoom(-1)">◄</div>
+								<h1 id="l-title" class="f-ayres">SALLE : Playa ou bien ?</h1>
+								<div class="room-button flex_column justify_center transition" onclick="SetNextRoom(1)">►</div>
+							</div>
+							
 							<div class="width_90 height_100 flex_row justify_start align_start">
 								
 								<div class="flex_column justify_start width_50 height_100">
@@ -211,6 +216,7 @@
     	submit       = document.getElementById("l-f-submit");
 
     	// DATA
+    	selectedRoom = 0;
     	titles       = [ "Plage", "Grotte", "Cyber Punk", "Aquarium" ];
     	descriptions = [
     		"Salle de karaoké immersive sur le theme de la plage, plongez vos pieds dans du vrai sable et profitez du moment. Chantez sur vos musiques préférées, en sirotant un cocktail. Dépaysement garantie !",
@@ -247,12 +253,30 @@
     		//    1 ->  left panel shown
     		//    2 -> right panel shown
 
-    		SetRoom(room);
+    		selectedRoom = room;
+    		SetRoom(selectedRoom);
     		
     		if      (state == 1) SetPanelState(true , false);
     		else if (state == 2) SetPanelState(false, true );
     		else                 SetPanelState(false, false);
     	}
+
+    	function SetNextRoom(state){
+    		if (state > 0){
+    			if (selectedRoom < titles.length - 1)
+    				selectedRoom++;
+    			else
+    				selectedRoom = 0;
+    		}
+    		if (state < 0){
+    			if (selectedRoom > 0)
+    				selectedRoom--;
+    			else
+    				selectedRoom = titles.length - 1;
+    		}
+    		SetRoom(selectedRoom);
+    	}
+
     	function Reserv(state){
     		console.log(state);
     		SetPanelState(!state, state);

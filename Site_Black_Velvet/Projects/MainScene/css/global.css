@@ -24,6 +24,8 @@ footer>.landscape            { height: 130px; background-color: var(--mainColorD
 #content h2                  { font-size: 3em; letter-spacing: 1px; color: var(--secondColor); margin: 10px; }
 #content h3                  { font-size: 2em; letter-spacing: 1px; color: var(--secondColor); margin: 10px; }
 #content p                   { text-align: justify; }
+#content .room-button        { width: 50px; height: 50px; border-radius: 50%; background-color: var(--mainColor); color: var(--secondColor); cursor: pointer; }
+#content .room-button:hover  { transform: scale(1.1); font-size: 1.5em; box-shadow: 0 0 20px var(--secondColor); }
 #content #mainPic            { box-shadow: 0 0 25px #0005; }
 #content #panelBG            { position: absolute; pointer-events: none; }
 #content img[class^="bump"]  { position: absolute; width: 200px; filter: sepia(1) saturate(2); }
