@@ -35,7 +35,7 @@
         <script type="module" src="./src/generated/gen.js"></script>
         <script type="module" src="./src/main.ts"></script>
 
-        <div id="main">
+        <div id="main" class="transition">
             <needle-engine id="needle"></needle-engine>
         </div>
 
@@ -191,6 +191,7 @@
 
 	<script>
 		// DISPLAY
+		main         = document.getElementById("main");
     	leftPanel    = document.getElementById("l-left");
     	rightPanel   = document.getElementById("l-right");
     	mainPic      = document.getElementById("l-mainPic");
@@ -223,8 +224,13 @@
     	function SetPanelState(left, right){
     		leftValue  = left  ? "0" : "-110%";
     		rightValue = right ? "0" : " 110%";
+    		if (left && right || !left && !right) mainValue = "-25%";
+    		else if (left) mainValue = "0";
+    		else mainValue = "-50%";
+
     		leftPanel.style.transform  = "translateX(" + leftValue  + ")";
     		rightPanel.style.transform = "translateX(" + rightValue + ")";
+    		main.style.transform       = "translateX(" + mainValue  + ")";
     	}
     	function SetRoom(room){
     		mainPic.src           = "./images/rooms/room" + room + ".png";

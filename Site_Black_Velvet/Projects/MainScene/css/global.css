@@ -15,6 +15,9 @@ header>.portrait #logo-title    { height: 50px; margin: 10px; }
 /*--- FOOTER ---*/
 footer>.landscape            { height: 130px; background-color: var(--mainColorDark); }
 
+/*--- 3D --- */
+#main                        { transform: translateX(-25%); }
+
 /*--- CONTENT ---*/
 #content                     { position: relative; z-index: 998; }
 #content h1                  { font-size: 3em; letter-spacing: 1px; transform: scaleX(1.2); color: var(--secondColor); filter: drop-shadow(0 0 10px var(--black)); }
