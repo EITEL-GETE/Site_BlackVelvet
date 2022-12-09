@@ -1,0 +1,17 @@
+body     { color: black; }
+
+table    { border: solid 3px black; border-radius: 5px; border-spacing: 0; }
+thead    { background-color: #0af; color: white; font-weight: bold; }
+tbody    { background-color: #fff; color: black; }
+td       { border: solid 1px black; width: 100px; text-align: center; }
+thead td:hover { background-color: #fa0; cursor: pointer; }
+tbody td:hover { background-color: #eee; cursor: pointer; }
+
+input { transition: .3s; }
+input[type="button"] { width: 40px; height: 40px; background-color: #0af; border: none; border-radius: 5px; color: white; }
+input[type="button"]:hover { background-color: #fa0; box-shadow: 0 0 10px #fa0; }
+input[type="button"]:focus { outline: none; }
+
+.null    { opacity: 50%; pointer-events: none; }
+.res     { background-color: #fa0; color: white; font-weight: bold; }
+.res:hover { background-color: #fa09; }

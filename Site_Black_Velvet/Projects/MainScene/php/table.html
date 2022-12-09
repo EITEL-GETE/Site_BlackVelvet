@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Table</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="../css/colors.css">
+		<link rel="stylesheet" type="text/css" href="../css/font.css">
+		<link rel="stylesheet" type="text/css" href="../css/default.css">
+		<link rel="stylesheet" type="text/css" href="../css/global.css">
+		<link rel="stylesheet" type="text/css" href="../css/admin.css">
+	</head>
+
+	<body class="width_100 flex_column f-simpleText">
+		<div id="tabWeek" class="margin_top_100p">
+			<table id="tab_reserv">
+				<thead>
+					<tr>
+						<td colspan="8" onclick="getInfoWeek(1)">2022-12-05 / 2022-12-11</td>
+					</tr>
+					<tr>
+						<td>Horaires</td>
+						<td id="1" onclick="getInfoDay(1, 1)">Lundi</td>
+						<td id="2" onclick="getInfoDay(2, 1)">Mardi</td>
+						<td id="3" onclick="getInfoDay(3, 1)">Mercredi</td>
+						<td id="4" onclick="getInfoDay(4, 1)">Jeudi</td>
+						<td id="5" onclick="getInfoDay(5, 1)">Vendredi</td>
+						<td id="6" onclick="getInfoDay(6, 1)">Samedi</td>
+						<td id="7" onclick="getInfoDay(7, 1)">Dimanche</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>9:30 - 10h30</td>
+						<td class="null"> NULL</td>
+						<td class="null"> NULL</td>
+						<td class="null"> NULL</td>
+						<td class="null"> NULL</td>
+						<td class="null"> NULL</td>
+						<td class="null"> NULL</td>
+						<td class="null"> NULL</td>
+					</tr>
+					<tr>
+						<td>10:30 - 11h30</td>
+						<td class="null"> NULL</td>
+						<td class="null"> NULL</td>
+						<td id="Ses-6_Com-0_Sal-1_Typ-0" class="res" onclick="getInfo(this.id)">Réservé</td>
+						<td class="null"> NULL</td>
+						<td class="null"> NULL</td>
+						<td id="Ses-30_Com-0_Sal-1_Typ-0" class="nores" onclick="getInfo(this.id)">Libre</td>
+						<td class="null"> NULL</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="margin_top_20p">
+			<input type="button" name="btn2" value="◄" onclick="getWeek(-7, <?php echo json_encode($salle)?>)">
+			<input type="button" name="btn1" value="►" onclick="getWeek(7, <?php echo json_encode($salle)?>)">
+    		
+		</div>
+		
+	</body>
+
+</html>
