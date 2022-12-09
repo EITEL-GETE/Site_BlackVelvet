@@ -20,7 +20,8 @@ MonoBehaviour:
   - Path: Assets/Scenes/CollaborativeSandbox.unity
     Projects: []
     BuilderScene: 
+  - Path: Assets/Scenes/Rooms.unity
+    Projects: []
+    BuilderScene: 
   Projects:
-  - ProjectPath: Library/Empty
   - ProjectPath: Projects/MainScene
-  - ProjectPath: Library/Temp

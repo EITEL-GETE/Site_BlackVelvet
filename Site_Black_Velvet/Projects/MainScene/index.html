@@ -35,152 +35,159 @@
         <script type="module" src="./src/generated/gen.js"></script>
         <script type="module" src="./src/main.ts"></script>
 
-        <div id="main">
+        <div id="main" class="transition">
             <needle-engine id="needle"></needle-engine>
         </div>
 
-		<div id="content" class="width_100 height_100">
-
-			<div class="portrait width_100 height_100">
-				<div class="width_100 height_100 flex_column justify_center">
-					<div class="panel-bot width_100 height_50"></div>
-				</div>
+		<div class="portrait width_100 height_100">
+			<div class="width_100 height_100 flex_column justify_center">
+				<div class="panel-bot width_100 height_50"></div>
 			</div>
+		</div>
 
-			<div class="landscape width_100 height_100">
-				<div class="width_50 height_100 flex_column justify_center">
+		<div class="landscape width_100 height_100">
+			<div class="width_50 height_100 flex_column justify_center">
 
-					<div id="l-left" class="panel-left height_90 flex_column justify_between transition">
-						<div id="panelBG" class="width_100 height_100 flex_column justify_between">
-							<div class="width_100 flex_row justify_between">
-								<img class="bump0" src="./images/bump/corner.png">
-								<img class="bump1" src="./images/bump/center.png">
-								<img class="bump2" src="./images/bump/corner.png">
-							</div>
-							<div class="width_100 flex_row justify_between">
-								<img class="bump3" src="./images/bump/corner.png">
-								<img class="bump4" src="./images/bump/center.png">
-								<img class="bump5" src="./images/bump/corner.png">
-							</div>
+				<div id="l-left" class="panel-left height_90 flex_column justify_between transition">
+					<div id="panelBG" class="width_100 height_100 flex_column justify_between">
+						<div class="width_100 flex_row justify_between">
+							<img class="bump0" src="./images/bump/corner.png">
+							<img class="bump1" src="./images/bump/center.png">
+							<img class="bump2" src="./images/bump/corner.png">
 						</div>
+						<div class="width_100 flex_row justify_between">
+							<img class="bump3" src="./images/bump/corner.png">
+							<img class="bump4" src="./images/bump/center.png">
+							<img class="bump5" src="./images/bump/corner.png">
+						</div>
+					</div>
 
-						<div class="width_100 height_100 flex_column justify_start">
+					<div class="width_100 height_100 flex_column justify_start">
 
-							<h1 id="l-title" class="f-ayres margin_top_100p">SALLE : Playa ou bien ?</h1>
-							<div class="width_90 height_100 flex_row justify_start align_start">
-								
-								<div class="flex_column justify_start width_50 height_100">
-									<p id="l-description" class="f-simpleText"><span class="bold">Description :</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-									<div class="frame flex_column justify_center user margin_top_20p">
-										<h2 class="f-ayres">Capacité :</h2>
-										<div class="width_60 flex_row justify_between">
-											<p id="l-capacity" class="userPara f-ayres">5x</p>
-											<img class="userImg" src="./images/icons/user.png">
-										</div>
-									</div>
-
-								</div>
+						<div class="flex_row width_50 justify_between margin_top_100p">
+							<div class="room-button flex_column justify_center transition" onclick="SetNextRoom(-1)">◄</div>
+							<h1 id="l-title" class="f-ayres">SALLE : Playa ou bien ?</h1>
+							<div class="room-button flex_column justify_center transition" onclick="SetNextRoom(1)">►</div>
+						</div>
+						
+						<div class="width_90 height_100 flex_row justify_start align_start">
 							
-								<div class="width_50 height_100 flex_column justify_start">
-									<img id="l-mainPic" class="width_90" src="./images/rooms/room0.png">
+							<div class="flex_column justify_start width_50 height_100">
+								<p id="l-description" class="f-simpleText"><span class="bold">Description :</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-									<div id="l-reserv" class="button margin_top_50p transition" onclick="Reserv(true)">
-										<div class="width_100 height_100">
-											<div class="width_100 flex_row justify_between">
-												<img src="./images/bump/corner.png">
-												<img class="r180" src="./images/bump/corner.png">
-											</div>
+								<div class="frame flex_column justify_center user margin_top_20p">
+									<h2 class="f-ayres">Capacité :</h2>
+									<div class="width_60 flex_row justify_between">
+										<p id="l-capacity" class="userPara f-ayres">5x</p>
+										<img class="userImg" src="./images/icons/user.png">
+									</div>
+								</div>
+
+							</div>
+						
+							<div class="width_50 height_100 flex_column justify_start">
+								<img id="l-mainPic" class="width_90" src="./images/rooms/room0.png">
+
+								<div id="l-reserv" class="button margin_top_50p transition" onclick="Reserv(true)">
+									<div class="width_100 height_100">
+										<div class="width_100 flex_row justify_between">
+											<img src="./images/bump/corner.png">
+											<img class="r180" src="./images/bump/corner.png">
 										</div>
-										<div class="width_100 height_100 flex_column justify_center">
-											<p class="f-ayres bold transition">RÉSERVER ►</p>
-										</div>
+									</div>
+									<div class="width_100 height_100 flex_column justify_center">
+										<p class="f-ayres bold transition">RÉSERVER ►</p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-
-					<div id="l-right" class="panel-right height_90 flex_column justify_between transition">
-						<div id="panelBG" class="width_100 height_100 flex_column justify_between">
-							<div class="width_100 flex_row justify_between">
-								<img class="bump0" src="./images/bump/corner.png">
-								<img class="bump1" src="./images/bump/center.png">
-								<img class="bump2" src="./images/bump/corner.png">
-							</div>
-							<div class="width_100 flex_row justify_between">
-								<img class="bump3" src="./images/bump/corner.png">
-								<img class="bump4" src="./images/bump/center.png">
-								<img class="bump5" src="./images/bump/corner.png">
-							</div>
-						</div>
-
-						<div class="width_100 height_100 flex_column justify_start">
-
-							<div id="l-back" class="button transition margin_top_50p" onclick="Reserv(false)">
-								<div class="width_100 height_100">
-									<div class="width_100 flex_row justify_between">
-										<img src="./images/bump/corner.png">
-										<img class="r180" src="./images/bump/corner.png">
-									</div>
-								</div>
-								<div class="width_100 height_100 flex_column justify_center">
-									<p class="f-ayres bold transition">◄ RETOUR</p>
-								</div>
-							</div>
-
-							<h1 id="l-res-title" class="f-ayres margin_top_20p">Réservation → ...</h1>
-
-							<form id="l-form" class="f-simpleText width_80 frame" method="POST" action=#>
-
-								<h3 class="f-ayres">Date & Heure</h3>
-								<div id="l-f-session" class="inputToSelect flex_column transition" onclick="ShowCalendar(true)">
-									<legend>- Selectionner date & heure -</legend>
-									<input type="date" name="date" class="f-simpleText width_40" required disabled hidden>
-									<select name="hour" class="f-simpleText width_40" disabled hidden>
-										<option value="" selected>- Choisir un heure -</option>
-										<option value="1">de 10h30 à 11h30</option>
-									</select>
-								</div>
-
-								<h3 class="f-ayres">Coordonnées</h3>
-								<div class="width_100 flex_row justify_between">
-									<div class="width_40">
-										<label>Nom</label><br/>
-										<input id="l-f-lastname" type="text" name="lastname" placeholder="Dupon" class="width_100" required>
-									</div>
-									<div class="width_40">
-										<label>Prénom</label><br/>
-										<input id="l-f-firstname" type="text" name="firstname" placeholder="Jeanne" class="width_100" required>
-									</div>
-								</div>
-								<div class="width_100 flex_row justify_between">
-									<div class="width_40">
-										<label>Adresse email</label><br/>
-										<input type="email" name="email" placeholder="j.dupon@email.fr" class="width_100" required>
-									</div>
-									<div class="width_40">
-										<label>Téléphone</label><br/>
-										<input id="l-f-phone" type="tel" name="phone" placeholder="06 -- -- -- --" class="width_100" required>
-									</div>
-								</div>
-
-								<h3 class="f-ayres">Informations</h3>
-								<label>Nombre de personnes</label><br/>
-								<div class="width_100 flex_row justify_start">
-									<input id="l-f-userNumber" type="nombre" name="number" placeholder="1" value="1" min="1" max="" required>
-									<div id="l-f-nbMax">(n personnes maximum)</div>
-								</div>
-
-								<input id="l-f-submit" type="button" value="Passer au paiement">
-								
-							</form>
-
-						</div>
-					</div>
-
 				</div>
+
+				<div id="l-right" class="panel-right height_90 flex_column justify_between transition">
+					<div id="panelBG" class="width_100 height_100 flex_column justify_between">
+						<div class="width_100 flex_row justify_between">
+							<img class="bump0" src="./images/bump/corner.png">
+							<img class="bump1" src="./images/bump/center.png">
+							<img class="bump2" src="./images/bump/corner.png">
+						</div>
+						<div class="width_100 flex_row justify_between">
+							<img class="bump3" src="./images/bump/corner.png">
+							<img class="bump4" src="./images/bump/center.png">
+							<img class="bump5" src="./images/bump/corner.png">
+						</div>
+					</div>
+
+					<div class="width_100 height_100 flex_column justify_start">
+
+						<div id="l-back" class="button transition margin_top_50p" onclick="Reserv(false)">
+							<div class="width_100 height_100">
+								<div class="width_100 flex_row justify_between">
+									<img src="./images/bump/corner.png">
+									<img class="r180" src="./images/bump/corner.png">
+								</div>
+							</div>
+							<div class="width_100 height_100 flex_column justify_center">
+								<p class="f-ayres bold transition">◄ RETOUR</p>
+							</div>
+						</div>
+
+						<h1 id="l-res-title" class="f-ayres margin_top_20p">Réservation → ...</h1>
+
+						<form id="l-form" class="f-simpleText width_80 frame" method="POST" action=#>
+
+							<h3 class="f-ayres">Date & Heure</h3>
+							<div id="l-f-session" class="inputToSelect flex_column transition" onclick="ShowCalendar(true);">
+								<legend>- Selectionner date & heure -</legend>
+								<input type="date" name="date" class="f-simpleText width_40" required disabled hidden>
+								<select name="hour" class="f-simpleText width_40" disabled hidden>
+									<option value="" selected>- Choisir un heure -</option>
+									<option value="1">de 10h30 à 11h30</option>
+								</select>
+							</div>
+
+							<h3 class="f-ayres">Coordonnées</h3>
+							<div class="width_100 flex_row justify_between">
+								<div class="width_40">
+									<label>Nom</label><br/>
+									<input id="l-f-lastname" type="text" name="lastname" placeholder="Dupon" class="width_100" required>
+								</div>
+								<div class="width_40">
+									<label>Prénom</label><br/>
+									<input id="l-f-firstname" type="text" name="firstname" placeholder="Jeanne" class="width_100" required>
+								</div>
+							</div>
+							<div class="width_100 flex_row justify_between">
+								<div class="width_40">
+									<label>Adresse email</label><br/>
+									<input type="email" name="email" placeholder="j.dupon@email.fr" class="width_100" required>
+								</div>
+								<div class="width_40">
+									<label>Téléphone</label><br/>
+									<input id="l-f-phone" type="tel" name="phone" placeholder="06 -- -- -- --" class="width_100" required>
+								</div>
+							</div>
+
+							<h3 class="f-ayres">Informations</h3>
+							<label>Nombre de personnes</label><br/>
+							<div class="width_100 flex_row justify_start">
+								<input id="l-f-userNumber" type="nombre" name="number" placeholder="1" value="1" min="1" max="" required>
+								<div id="l-f-nbMax">(n personnes maximum)</div>
+							</div>
+
+							<input id="l-f-submit" type="button" value="Passer au paiement">
+							
+						</form>
+
+					</div>
+				</div>
+
 			</div>
+		</div>
+
+		<div id="calendar" class="width_100 height_100">
+			<!-- CALENDAR -->
+			<button onclick="ShowCalendar(false)">FERMER LE CALENDRIER</button>
 		</div>
 
 		<footer>
@@ -191,6 +198,7 @@
 
 	<script>
 		// DISPLAY
+		main         = document.getElementById("main");
     	leftPanel    = document.getElementById("l-left");
     	rightPanel   = document.getElementById("l-right");
     	mainPic      = document.getElementById("l-mainPic");
@@ -210,6 +218,7 @@
     	submit       = document.getElementById("l-f-submit");
 
     	// DATA
+    	selectedRoom = 0;
     	titles       = [ "Plage", "Grotte", "Cyber Punk", "Aquarium" ];
     	descriptions = [
     		"Salle de karaoké immersive sur le theme de la plage, plongez vos pieds dans du vrai sable et profitez du moment. Chantez sur vos musiques préférées, en sirotant un cocktail. Dépaysement garantie !",
@@ -219,13 +228,20 @@
     	];
     	capacities   = [ 6, 6, 10, 16 ];
 
-    	// DISPLAY
+    	// SET PANELS POSITIONS
     	function SetPanelState(left, right){
     		leftValue  = left  ? "0" : "-110%";
     		rightValue = right ? "0" : " 110%";
+    		if (left && right || !left && !right) mainValue = "-25%";
+    		else if (left) mainValue = "0";
+    		else mainValue = "-50%";
+
     		leftPanel.style.transform  = "translateX(" + leftValue  + ")";
     		rightPanel.style.transform = "translateX(" + rightValue + ")";
+    		main.style.transform       = "translateX(" + mainValue  + ")";
     	}
+
+    	// DISPLAY ROOM DATA
     	function SetRoom(room){
     		mainPic.src           = "./images/rooms/room" + room + ".png";
     		title.innerHTML       = titles[room];
@@ -235,28 +251,51 @@
     		userNumber.max        = capacities[room];
     		numberMax.innerHTML   = "(" + capacities[room] + " personnes maximum)";
     	}
+
+    	// SELECT A ROOM (room) WITH PANELS POSITIONS (state)
     	function SelectRoom(room, state){
     		// State :
     		//    0 ->    no panel shown
     		//    1 ->  left panel shown
     		//    2 -> right panel shown
 
-    		SetRoom(room);
+    		selectedRoom = room;
+    		SetRoom(selectedRoom);
     		
     		if      (state == 1) SetPanelState(true , false);
     		else if (state == 2) SetPanelState(false, true );
     		else                 SetPanelState(false, false);
     	}
+
+    	// SELECT NEXT OR PREVIEW ROOM
+    	function SetNextRoom(state){
+    		if (state > 0){
+    			if (selectedRoom < titles.length - 1)
+    				selectedRoom++;
+    			else
+    				selectedRoom = 0;
+    		}
+    		if (state < 0){
+    			if (selectedRoom > 0)
+    				selectedRoom--;
+    			else
+    				selectedRoom = titles.length - 1;
+    		}
+    		SetRoom(selectedRoom);
+    	}
+
+    	// GO TO RESERV PANEL
     	function Reserv(state){
-    		console.log(state);
     		SetPanelState(!state, state);
     	}
 
-    	// FORM
+    	// DISPLAY CALENDAR
     	function ShowCalendar(state){
+    		console.log("CALENDAR : " + state);
     		calendar.style.display = state ? "block" : "none";
     	}
 
+    	// VERIFY FORM INPUTS ----- /!\ NOT FINISHED /!\
     	function Submit(){
     		isFormValid = true;
 
@@ -283,6 +322,7 @@
 
     	submit.addEventListener("click", Submit);
 
+    	// Setup initial state (room 0, info panel shown)
     	SelectRoom(0, 1);
 
     </script>

@@ -15,27 +15,32 @@ header>.portrait #logo-title    { height: 50px; margin: 10px; }
 /*--- FOOTER ---*/
 footer>.landscape            { height: 130px; background-color: var(--mainColorDark); }
 
-/*--- CONTENT ---*/
-#content                     { position: relative; z-index: 998; }
-#content h1                  { font-size: 3em; letter-spacing: 1px; transform: scaleX(1.2); color: var(--secondColor); filter: drop-shadow(0 0 10px var(--black)); }
-#content h2                  { font-size: 3em; letter-spacing: 1px; color: var(--secondColor); margin: 10px; }
-#content h3                  { font-size: 2em; letter-spacing: 1px; color: var(--secondColor); margin: 10px; }
-#content p                   { text-align: justify; }
-#content #mainPic            { box-shadow: 0 0 25px #0005; }
-#content #panelBG            { position: absolute; pointer-events: none; }
-#content img[class^="bump"]  { position: absolute; width: 200px; filter: sepia(1) saturate(2); }
-#content .bump0              { left:   0; top:    0; transform: scaleY(-1); }
-#content .bump1              { left: 50%; top:    0; transform: rotateZ(180deg) translateX(50%); }
-#content .bump2              { right:  0; top:    0; transform: rotateZ(180deg); }
-#content .bump3              { left:   0; bottom: 0; }
-#content .bump4              { left: 50%; bottom: 0; transform: translateX(-50%); }
-#content .bump5              { right:  0; bottom: 0; transform: scaleX(-1); }
-#content .frame              { width: 70%; min-width: 150px; box-shadow: 0 0 10px #0005; border-radius: 30px; border-top: double 10px var(--mainColorAlpha); border-bottom: double 10px var(--mainColorAlpha); }
-#content .userPara           { font-size: 5em; margin: 0; color: var(--secondColor); }
-#content .userImg            { width: 40%; min-width: 50px; filter: sepia(1) saturate(7); }
-#content .r180               { transform: rotateZ(180deg); }
+/*--- 3D --- */
+#main                        { transform: translateX(-25%); }
 
-div[class^="panel"]          { position: absolute; width: 50vw; min-width: 500px; background-color: #0003; border-radius: 60px; border-top: double 10px var(--mainColorAlpha); border-bottom: double 10px var(--mainColorAlpha); }
+/*--- CONTENT ---*/
+div[class^="panel"]                    { position: relative; z-index: 0; }
+div[class^="panel"] h1                 { font-size: 3em; letter-spacing: 1px; transform: scaleX(1.2); color: var(--secondColor); filter: drop-shadow(0 0 10px var(--black)); }
+div[class^="panel"] h2                 { font-size: 3em; letter-spacing: 1px; color: var(--secondColor); margin: 10px; }
+div[class^="panel"] h3                 { font-size: 2em; letter-spacing: 1px; color: var(--secondColor); margin: 10px; }
+div[class^="panel"] p                  { text-align: justify; }
+div[class^="panel"] .room-button       { width: 40px; height: 40px; border-radius: 50%; background-color: var(--mainColor); color: var(--secondColor); cursor: pointer; }
+div[class^="panel"] .room-button:hover { transform: scale(1.1); font-size: 1.5em; box-shadow: 0 0 20px var(--secondColor); }
+div[class^="panel"] #mainPic           { box-shadow: 0 0 25px #0005; }
+div[class^="panel"] #panelBG           { position: absolute; pointer-events: none; }
+div[class^="panel"] img[class^="bump"] { position: absolute; width: 200px; filter: sepia(1) saturate(2); }
+div[class^="panel"] .bump0             { left:   0; top:    0; transform: scaleY(-1); }
+div[class^="panel"] .bump1             { left: 50%; top:    0; transform: rotateZ(180deg) translateX(50%); }
+div[class^="panel"] .bump2             { right:  0; top:    0; transform: rotateZ(180deg); }
+div[class^="panel"] .bump3             { left:   0; bottom: 0; }
+div[class^="panel"] .bump4             { left: 50%; bottom: 0; transform: translateX(-50%); }
+div[class^="panel"] .bump5             { right:  0; bottom: 0; transform: scaleX(-1); }
+div[class^="panel"] .frame             { width: 70%; min-width: 150px; box-shadow: 0 0 10px #0005; border-radius: 30px; border-top: double 10px var(--mainColorAlpha); border-bottom: double 10px var(--mainColorAlpha); }
+div[class^="panel"] .userPara          { font-size: 5em; margin: 0; color: var(--secondColor); }
+div[class^="panel"] .userImg           { width: 40%; min-width: 50px; filter: sepia(1) saturate(7); }
+div[class^="panel"] .r180              { transform: rotateZ(180deg); }
+
+div[class^="panel"]          { position: absolute; z-index: 998; width: 50vw; min-width: 500px; background-color: #0003; border-radius: 60px; border-top: double 10px var(--mainColorAlpha); border-bottom: double 10px var(--mainColorAlpha); }
 .panel-left                  { left:  0; }
 .panel-right                 { right: 0; }
 
@@ -56,6 +61,8 @@ div[class^="panel"]          { position: absolute; width: 50vw; min-width: 500px
 .inputToSelect               { cursor: pointer; color: var(--secondColor); border: solid 2px var(--secondColor); border-radius: 5px; background-color: var(--secondColorAlpha); }
 .inputToSelect:hover         { transform: scale(1.1); color: #0f0; border-color: #0f0; background-color: #0f09; }
 #l-f-nbMax                   { font-size: .7em; color: var(--secondColor); }
+
+#calendar                    { display: none; position: absolute; z-index: 998; top: 0; left: 0; background-color: #fff5; }
 
 /*--- MEDIA QUERIES ---*/
 @media screen
