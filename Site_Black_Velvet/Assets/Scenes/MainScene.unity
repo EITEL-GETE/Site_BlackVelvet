@@ -1943,6 +1943,22 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 1461207998316365576, guid: 6224425fe1908b148911c8cc6d1fbf0e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461207998316365576, guid: 6224425fe1908b148911c8cc6d1fbf0e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461207998316365576, guid: 6224425fe1908b148911c8cc6d1fbf0e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461207998316365576, guid: 6224425fe1908b148911c8cc6d1fbf0e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1512476919675954148, guid: 6224425fe1908b148911c8cc6d1fbf0e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -2243,7 +2259,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 6224425fe1908b148911c8cc6d1fbf0e, type: 3}
 --- !u!4 &1556481013 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8922899261515959469, guid: 6224425fe1908b148911c8cc6d1fbf0e, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1461207998316365576, guid: 6224425fe1908b148911c8cc6d1fbf0e, type: 3}
   m_PrefabInstance: {fileID: 1556481012}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1597275517
