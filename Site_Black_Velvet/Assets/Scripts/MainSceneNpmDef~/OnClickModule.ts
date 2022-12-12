@@ -4,14 +4,8 @@ import { Behaviour, serializeable } from "@needle-tools/engine";
 
 export class OnClickModule extends Behaviour {
 
-    @serializeable()
-    myStringField: string = "Hello World";
-    
-    start() {
-    }
-    
-    onClick() {
-        console.log("CLICK !!!")
+    onClick(roomNumber) {
+        SelectRoom(roomNumber, 1);
     }
     
 }

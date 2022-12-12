@@ -5,9 +5,10 @@
 
 namespace Needle.Typescript.GeneratedComponents
 {
-	public partial class OnClickModule : UnityEngine.MonoBehaviour
+	public partial class RotateCenterAtPoint : UnityEngine.MonoBehaviour
 	{
-		public void onClick(object @roomNumber){}
+		public string @myStringField = "Hello World";
+		public void start(){}
 	}
 }
 

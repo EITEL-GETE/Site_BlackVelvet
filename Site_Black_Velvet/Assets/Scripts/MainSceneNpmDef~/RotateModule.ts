@@ -41,4 +41,11 @@ export class RotateModule extends Behaviour {
             this.currentVelocity -= this.velocityDamping;
         else this.currentVelocity = 0;
     }
+    
+    SwitchRoom()
+    {
+        this.gameObject.rotateY(5);
+        this.gameObject.translateY(5);
+    }
+    
 }
