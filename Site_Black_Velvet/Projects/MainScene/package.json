@@ -2,22 +2,22 @@
   "name": "my-project",
   "version": "1.0.0",
   "scripts": {
-	  "start": "vite --host",
-	  "build:dev": "tsc && vite build && npm run copy-files",
-	  "build:production": "npm run build:dev && npm run pack-gltf",
-	  "serve": "vite preview",
-	  "copy-files": "copy-files-from-to",
-	  "pack-gltf": "npm run pack-gltf --prefix node_modules/@needle-tools/engine"
-	},
+    "start": "vite --host",
+    "build:dev": "tsc && vite build && npm run copy-files",
+    "build:production": "npm run build:dev && npm run pack-gltf",
+    "serve": "vite preview",
+    "copy-files": "copy-files-from-to",
+    "pack-gltf": "npm run pack-gltf --prefix node_modules/@needle-tools/engine"
+  },
   "dependencies": {
-	  "@needle-tools/engine": "file:../../Library/PackageCache/com.needle.engine@2.47.0-pre/package~",
-	  "three": "Library/PackageCache/com.needle.engine@2.47.0-pre/package~/node_modules/three",
+	  "@needle-tools/engine": "file:../../Library/PackageCache/com.needle.engine@2.53.1-pre.1/package~",
+	  "three": "file:../../Library/PackageCache/com.needle.engine@2.53.1-pre.1/package~/node_modules/three",
 	  "mainscenenpmdef": "file:../../Assets/Scripts/MainSceneNpmDef~"
 	},
   "devDependencies": {
     "@gltf-transform/cli": "^2.1.7",
     "@gltf-transform/functions": "^2.1.7",
-    "@types/three": "^0.134.0",
+    "@types/three": "0.146.0",
     "copy-files-from-to": "^3.2.2",
     "draco3dgltf": "^1.5.0",
     "glob": "^7.2.0",
@@ -26,7 +26,7 @@
     "vite-plugin-compression": "^0.3.6",
     "rollup-plugin-visualizer": "^5.5.2",
     "ansi-styles": "^6.1.0",
-    "@needle-tools/needle-component-compiler" : "^1.0.0"
+    "@needle-tools/needle-component-compiler": "^1.0.0"
   },
   "copyFiles": [
     {
