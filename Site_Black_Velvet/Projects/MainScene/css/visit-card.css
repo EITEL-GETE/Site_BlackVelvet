@@ -7,7 +7,7 @@ body             {
     background: url("../images/temple.png"), radial-gradient(circle, var(--mainColor) 0%, var(--mainColorDark) 100%);
 }
 
-#pp              { width: 15vw; height: 15vw; border-radius: 50%; filter: drop-shadow(0 0 50px var(--secondColor)); }
+#pp              { width: 15vw; height: auto; filter: drop-shadow(0 0 50px var(--secondColor)); }
 .panel           {
     box-shadow: 0 0 50px #0005;
     border-radius: 15px;
@@ -61,7 +61,7 @@ label            { width: 100%; margin-top: 1vw; color: var(--color_Main); }
     label         { font-size: .7em; }
     input         { font-size: .4em; }
     .network      { font-size: .8em; height: 80px; width: 80px; }
-    #pp           { width: 150px; height: 150px; }
+    #pp           { width: 150px; }
 }
 
 @media screen and (orientation: portrait) {
@@ -74,7 +74,7 @@ label            { width: 100%; margin-top: 1vw; color: var(--color_Main); }
     #profil        { width: 80%; margin-top: 25%; }
     .network       { font-size: 4em; height: 300px; width: 300px; border-radius: 20px; }
     .network:hover { border-radius: 80px; }
-    #pp            { width: 400px; height: 400px; }
+    #pp            { width: 400px; }
     .width_30_res  { width: 80%; }
     .width_40_res  { width: 90%; }
     .input         { font-size: 4em; }
