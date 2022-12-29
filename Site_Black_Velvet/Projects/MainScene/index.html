@@ -233,12 +233,12 @@
     		leftValue  = left  ? "0" : "-110%";
     		rightValue = right ? "0" : " 110%";
     		if (left && right || !left && !right) mainValue = "-25%";
-    		else if (left) mainValue = "0";
-    		else mainValue = "-50%";
+    		else if (left) mainValue = "-15%";
+    		else mainValue = "-35%";
 
     		leftPanel.style.transform  = "translateX(" + leftValue  + ")";
     		rightPanel.style.transform = "translateX(" + rightValue + ")";
-    		main.style.transform       = "translateX(" + mainValue  + ")";
+    		// main.style.transform       = "translateX(" + mainValue  + ")";
     	}
 
     	// DISPLAY ROOM DATA
@@ -281,6 +281,7 @@
     			else
     				selectedRoom = titles.length - 1;
     		}
+			SwitchRoom(selectedRoom)
     		SetRoom(selectedRoom);
     	}
 
@@ -323,7 +324,7 @@
     	submit.addEventListener("click", Submit);
 
     	// Setup initial state (room 0, info panel shown)
-    	SelectRoom(0, 1);
+    	SelectRoom(0, 0);
 
     </script>
 

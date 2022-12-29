@@ -1,0 +1,191 @@
+
+> my-project@1.0.0 build:production
+> npm run build:dev && npm run pack-gltf
+
+
+> my-project@1.0.0 build:dev
+> tsc && vite build && npm run copy-files
+
+vite v2.6.4 building for production...
+transforming...
+✓ 300 modules transformed.
+rendering chunks...
+dist/assets/logo_drawing_square.650ec4bd.png       699.54 KiB
+dist/assets/logo_title.fb0cd2de.png                29.99 KiB
+dist/assets/logo_drawing.a4626dce.png              576.40 KiB
+dist/assets/corner.6f4c9e1d.png                    24.22 KiB
+dist/assets/center.8f0b2815.png                    26.29 KiB
+dist/assets/room0.238ca409.png                     95.32 KiB
+dist/assets/Pragmatica-ExtraLight.eae763a1.ttf     92.34 KiB
+dist/assets/Ayres.0473b1ed.ttf                     101.95 KiB
+dist/assets/UltraCondensedSansSerif.3e40353e.ttf   42.66 KiB
+dist/assets/Nimbus Sans Light.cf93c368.ttf         25.50 KiB
+dist/assets/Nimbus Sans UltraLight.c3657399.ttf    27.57 KiB
+dist/assets/PoetsenOne-Regular.85b9c540.ttf        168.41 KiB
+dist/assets/Cano.9b1283fa.otf                      21.12 KiB
+dist/index.html                                    15.68 KiB
+dist/assets/index.6ce6b40c.css                     9.68 KiB / gzip: 2.74 KiB
+dist/assets/index.d78314a4.js                      589.14 KiB / gzip: 162.31 KiB
+dist/assets/vendor.f69bc2a3.js                     3033.00 KiB / gzip: 1000.10 KiB
+
+> my-project@1.0.0 copy-files
+> copy-files-from-to
+
+Reading copy instructions from file package.json
+
+Starting copy operation in "default" mode:
+ ✓ Copied [binary] assets/sceneRoot.glb to dist/assets/sceneRoot.glb
+ ✓ Copied [ utf8 ] node_modules/@needle-tools/engine/include/console/ConsoleReroute.js to dist/include/console/ConsoleReroute.js
+ ✓ Copied [ utf8 ] node_modules/@needle-tools/engine/include/draco/draco_decoder.js to dist/include/draco/draco_decoder.js
+ ✓ Copied [binary] node_modules/@needle-tools/engine/include/draco/draco_decoder.wasm to dist/include/draco/draco_decoder.wasm
+ ✓ Copied [ utf8 ] node_modules/@needle-tools/engine/include/ktx2/basis_transcoder.js to dist/include/ktx2/basis_transcoder.js
+ ✓ Copied [binary] node_modules/@needle-tools/engine/include/ktx2/basis_transcoder.wasm to dist/include/ktx2/basis_transcoder.wasm
+ ✓ Copied [ utf8 ] node_modules/@needle-tools/engine/include/three/ARButton.js to dist/include/three/ARButton.js
+ ✓ Copied [ utf8 ] node_modules/@needle-tools/engine/include/three/DragControls.js to dist/include/three/DragControls.js
+ ✓ Copied [ utf8 ] node_modules/@needle-tools/engine/include/three/EXT_mesh_gpu_instancing_exporter.js to dist/include/three/EXT_mesh_gpu_instancing_exporter.js
+ ✓ Copied [ utf8 ] node_modules/@needle-tools/engine/include/three/VRButton.js to dist/include/three/VRButton.js
+ ✓ Copied [binary] node_modules/@needle-tools/engine/include/three-mesh-ui-assets/backspace.png to dist/include/three-mesh-ui-assets/backspace.png
+ ✓ Copied [binary] node_modules/@needle-tools/engine/include/three-mesh-ui-assets/enter.png to dist/include/three-mesh-ui-assets/enter.png
+ ✓ Copied [binary] node_modules/@needle-tools/engine/include/three-mesh-ui-assets/shift.png to dist/include/three-mesh-ui-assets/shift.png
+ ✓ Already exists include/console/ConsoleReroute.js
+ ✓ Already exists include/draco/draco_decoder.js
+ ✓ Already exists include/draco/draco_decoder.wasm
+ ✓ Already exists include/ktx2/basis_transcoder.js
+ ✓ Already exists include/ktx2/basis_transcoder.wasm
+ ✓ Already exists include/three/ARButton.js
+ ✓ Already exists include/three/DragControls.js
+ ✓ Already exists include/three/EXT_mesh_gpu_instancing_exporter.js
+ ✓ Already exists include/three/VRButton.js
+ ✓ Already exists include/three-mesh-ui-assets/backspace.png
+ ✓ Already exists include/three-mesh-ui-assets/enter.png
+ ✓ Already exists include/three-mesh-ui-assets/shift.png
+ ✓ Already exists dist/include/console/ConsoleReroute.js
+ ✓ Already exists dist/include/draco/draco_decoder.js
+ ✓ Already exists dist/include/draco/draco_decoder.wasm
+ ✓ Copied [ utf8 ] include/fonts/arial-bold-italic-msdf.json to dist/include/fonts/arial-bold-italic-msdf.json
+ ✓ Copied [binary] include/fonts/arial-bold-italic.png to dist/include/fonts/arial-bold-italic.png
+ ✓ Copied [ utf8 ] include/fonts/arial-bold-msdf.json to dist/include/fonts/arial-bold-msdf.json
+ ✓ Copied [binary] include/fonts/arial-bold.png to dist/include/fonts/arial-bold.png
+ ✓ Copied [ utf8 ] include/fonts/arial-italic-msdf.json to dist/include/fonts/arial-italic-msdf.json
+ ✓ Copied [binary] include/fonts/arial-italic.png to dist/include/fonts/arial-italic.png
+ ✓ Copied [ utf8 ] include/fonts/arial-msdf.json to dist/include/fonts/arial-msdf.json
+ ✓ Copied [binary] include/fonts/arial.png to dist/include/fonts/arial.png
+ ✓ Copied [binary] include/fonts/Roboto-Regular-msdf.png to dist/include/fonts/Roboto-Regular-msdf.png
+ ✓ Copied [ utf8 ] include/fonts/Roboto-Regular.json to dist/include/fonts/Roboto-Regular.json
+ ✓ Already exists dist/include/ktx2/basis_transcoder.js
+ ✓ Already exists dist/include/ktx2/basis_transcoder.wasm
+ ✓ Already exists dist/include/three/ARButton.js
+ ✓ Already exists dist/include/three/DragControls.js
+ ✓ Already exists dist/include/three/EXT_mesh_gpu_instancing_exporter.js
+ ✓ Already exists dist/include/three/VRButton.js
+ ✓ Already exists dist/include/three-mesh-ui-assets/backspace.png
+ ✓ Already exists dist/include/three-mesh-ui-assets/enter.png
+ ✓ Already exists dist/include/three-mesh-ui-assets/shift.png
+
+> my-project@1.0.0 pack-gltf
+> npm run pack-gltf --prefix node_modules/@needle-tools/engine
+
+
+> @needle-tools/engine@2.45.0-pre pack-gltf
+> node node_modules/@needle-tools/gltf-transform-extensions/index.mjs
+
+Failed parsing commandline args
+You can define a toktx search path by adding --toktxPath <path> to the command line. The command may appear multiple times
+Debug false
+Prefix basepath: D:\Site3D\Site_BlackVelvet\Site_Black_Velvet\Projects\MainScene
+GLB files in D:\Site3D\Site_BlackVelvet\Site_Black_Velvet\Projects\MainScene\dist\assets: [
+  'D:/Site3D/Site_BlackVelvet/Site_Black_Velvet/Projects/MainScene/dist/assets/sceneRoot.glb'
+]
+now packing: D:/Site3D/Site_BlackVelvet/Site_Black_Velvet/Projects/MainScene/dist/assets/sceneRoot.glb
+READ NEEDLE_gameobject_data
+READ NEEDLE_components
+READ NEEDLE_persistent_assets
+READ NEEDLE_lightmaps
+READ NEEDLE_lighting_settings
+READ EXT_texture_exr
+toktx: Found KTX-Software v4.1.0-rc3.
+toktx:texture(1/26): Slots → [baseColorTexture]
+toktx:texture(2/26): Slots → [baseColorTexture]
+toktx:texture(3/26): Slots → [baseColorTexture]
+toktx:texture(4/26): Slots → [baseColorTexture]
+toktx:texture(5/26): Slots → [baseColorTexture]
+toktx:texture(6/26): Slots → [baseColorTexture]
+toktx:texture(7/26): Slots → [baseColorTexture]
+toktx:texture(8/26): Slots → [baseColorTexture]
+toktx:texture(9/26): Slots → [baseColorTexture]
+toktx:texture(10/26): Slots → [metallicRoughnessTexture]
+toktx:texture(11/26): Slots → [baseColorTexture]
+toktx:texture(12/26): Slots → [normalTexture]
+toktx:texture(13/26): Slots → [baseColorTexture]
+toktx:texture(14/26): Slots → [baseColorTexture]
+toktx:texture(15/26): Slots → [normalTexture]
+toktx:texture(16/26): Slots → [diffuseTexture]
+toktx:texture(17/26): Slots → [normalTexture]
+toktx:texture(18/26): Slots → [baseColorTexture]
+toktx:texture(19/26): Slots → [baseColorTexture]
+toktx:texture(20/26): Slots → [baseColorTexture]
+toktx:texture(21/26): Slots → [baseColorTexture]
+toktx:texture(22/26): Slots → [baseColorTexture]
+toktx:texture(23/26): Slots → [baseColorTexture]
+toktx:texture(24/26): Slots → [baseColorTexture]
+toktx:texture(3/26): Spawning → toktx --genmipmap --bcmp --resize 360x224 --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_2.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_2.png
+toktx:texture(1/26): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_0.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_0.jpg
+toktx:texture(2/26): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_1.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_1.jpg
+toktx:texture(9/26): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_8.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_8.jpg
+toktx:texture(10/26): Spawning → toktx --genmipmap --bcmp --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_9.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_9.jpg
+toktx:texture(14/26): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_13.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_13.jpg
+toktx:texture(13/26): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_12.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_12.jpg
+toktx:texture(17/26): Spawning → toktx --genmipmap --bcmp --normal_mode --input_swizzle rgb1 --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_16.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_16.jpg
+toktx:texture(19/26): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_18.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_18.jpg
+toktx:texture(20/26): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_19.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_19.png
+toktx:texture(21/26): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_20.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_20.png
+toktx:texture(24/26): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_23.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_23.jpg
+toktx:texture(22/26): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_21.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_21.png
+toktx:texture(4/26): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_3.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_3.jpg
+toktx:texture(5/26): Spawning → toktx --genmipmap --bcmp --resize 1024x404 --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_4.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_4.png
+toktx:texture(12/26): Spawning → toktx --genmipmap --bcmp --normal_mode --input_swizzle rgb1 --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_11.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_11.jpg
+toktx:texture(18/26): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_17.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_17.jpg
+toktx:texture(11/26): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_10.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_10.jpg
+toktx:texture(23/26): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_22.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_22.png
+toktx:texture(6/26): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_5.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_5.jpg
+toktx:texture(15/26): Spawning → toktx --genmipmap --bcmp --normal_mode --input_swizzle rgb1 --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_14.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_14.jpg
+toktx:texture(7/26): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_6.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_6.jpg
+toktx:texture(8/26): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_7.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_7.jpg
+toktx:texture(16/26): Spawning → toktx --genmipmap --bcmp --assign_oetf linear --assign_primaries none --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_15.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_15.jpg
+toktx:texture(3/26): 28.82 KB → 22.37 KB bytes
+toktx:texture(25/26): Slots → []
+toktx:texture(26/26): Slots → []
+toktx:texture(26/26): Spawning → toktx --genmipmap --bcmp --threads 2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_25.ktx2 C:\Users\eitel\AppData\Local\Temp/gltf-transform/ZPBqwq_25.png
+toktx:texture(20/26): 89.22 KB → 23.64 KB bytes
+toktx:texture(26/26): 692 Bytes → 1.07 KB bytes
+toktx:texture(21/26): 103.82 KB → 25.58 KB bytes
+toktx:texture(1/26): 174.05 KB → 49.78 KB bytes
+toktx:texture(19/26): 115.09 KB → 29.06 KB bytes
+toktx:texture(2/26): 493.6 KB → 92.98 KB bytes
+toktx:texture(17/26): 311.36 KB → 58.24 KB bytes
+toktx:texture(22/26): 486.39 KB → 78.61 KB bytes
+toktx:texture(24/26): 309.44 KB → 76.96 KB bytes
+toktx:texture(18/26): 707.59 KB → 155.66 KB bytes
+toktx:texture(5/26): 931.06 KB → 114.4 KB bytes
+toktx:texture(4/26): 925.94 KB → 150.14 KB bytes
+toktx:texture(9/26): 66.17 KB → 1.91 KB bytes
+toktx:texture(14/26): 85.64 KB → 7.58 KB bytes
+toktx:texture(10/26): 128.87 KB → 40.9 KB bytes
+toktx:texture(12/26): 653.5 KB → 162.3 KB bytes
+toktx:texture(13/26): 456.61 KB → 127.68 KB bytes
+toktx:texture(15/26): 2 MB → 407.56 KB bytes
+toktx:texture(11/26): 1.3 MB → 275.92 KB bytes
+toktx:texture(7/26): 2.43 MB → 524.51 KB bytes
+toktx:texture(23/26): 1.55 MB → 392.28 KB bytes
+toktx:texture(6/26): 1.92 MB → 420.93 KB bytes
+toktx:texture(16/26): 3.65 MB → 539.08 KB bytes
+toktx:texture(8/26): 2.41 MB → 531.25 KB bytes
+[KHR_draco_mesh_compression] Compression options: {"method":1,"encodeSpeed":5,"decodeSpeed":5,"quantizationBits":{"POSITION":14,"NORMAL":10,"COLOR":8,"TEX_COORD":12,"GENERIC":12},"quantizationVolume":"mesh"}
+[KHR_draco_mesh_compression] Compressed 112 primitives.
+WRITE NEEDLE_gameobject_data
+WRITE NEEDLE_components
+WRITE NEEDLE_persistent_assets
+WRITE NEEDLE_lightmaps
+WRITE NEEDLE_lighting_settings
+WRITE EXT_texture_exr
+packing done D:/Site3D/Site_BlackVelvet/Site_Black_Velvet/Projects/MainScene/dist/assets/sceneRoot.glb

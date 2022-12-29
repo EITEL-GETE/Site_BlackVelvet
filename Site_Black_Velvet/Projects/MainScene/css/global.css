@@ -16,7 +16,7 @@ header>.portrait #logo-title    { height: 50px; margin: 10px; }
 footer>.landscape            { height: 130px; background-color: var(--mainColorDark); }
 
 /*--- 3D --- */
-#main                        { transform: translateX(-25%); }
+#main                        { transform: translateX(0); } /* -25% */
 
 /*--- CONTENT ---*/
 div[class^="panel"]                    { position: relative; z-index: 0; }

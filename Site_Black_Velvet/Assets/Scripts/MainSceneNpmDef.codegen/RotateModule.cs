@@ -13,6 +13,7 @@ namespace Needle.Typescript.GeneratedComponents
 		public float @accelerationMultiplier = 5f;
 		public float @directionMultiplier = 0f;
 		public void update(){}
+		public void SwitchRoom(){}
 	}
 }
 

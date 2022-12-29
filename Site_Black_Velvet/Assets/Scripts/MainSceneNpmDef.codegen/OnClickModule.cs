@@ -7,9 +7,7 @@ namespace Needle.Typescript.GeneratedComponents
 {
 	public partial class OnClickModule : UnityEngine.MonoBehaviour
 	{
-		public string @myStringField = "Hello World";
-		public void start(){}
-		public void onClick(){}
+		public void onClick(object @roomNumber){}
 	}
 }
 
