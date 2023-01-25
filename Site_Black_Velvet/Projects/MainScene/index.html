@@ -219,7 +219,7 @@
 
     	// DATA
     	selectedRoom = 0;
-    	titles       = [ "Plage", "Grotte", "Cyber Punk", "Aquarium" ];
+    	titles       = [ "Plage", "Grotte", "Cyber Punk", "Aquarium", "Lounge Baroque" ];
     	descriptions = [
     		"Salle de karaoké immersive sur le theme de la plage, plongez vos pieds dans du vrai sable et profitez du moment. Chantez sur vos musiques préférées, en sirotant un cocktail. Dépaysement garantie !",
     		"Salle de karaoké immersive dans le charme d'une maison de Hobits. Venez chanter dans un royaume enchanteur.",
@@ -241,7 +241,7 @@
     		// main.style.transform       = "translateX(" + mainValue  + ")";
     	}
 
-    	// DISPLAY ROOM DATA
+		// DISPLAY ROOM DATA
     	function SetRoom(room){
     		mainPic.src           = "./images/rooms/room" + room + ".png";
     		title.innerHTML       = titles[room];
@@ -252,43 +252,95 @@
     		numberMax.innerHTML   = "(" + capacities[room] + " personnes maximum)";
     	}
 
-    	// SELECT A ROOM (room) WITH PANELS POSITIONS (state)
-    	function SelectRoom(room, state){
-    		// State :
-    		//    0 ->    no panel shown
-    		//    1 ->  left panel shown
-    		//    2 -> right panel shown
+		// SELECT A ROOM (room) WITH PANELS POSITIONS (state)
 
-    		selectedRoom = room;
-    		SetRoom(selectedRoom);
-    		
-    		if      (state == 1) SetPanelState(true , false);
-    		else if (state == 2) SetPanelState(false, true );
-    		else                 SetPanelState(false, false);
-    	}
-
-    	// SELECT NEXT OR PREVIEW ROOM
-    	function SetNextRoom(state){
+		// SELECT NEXT OR PREVIEW ROOM /!\ A mettre dans le version de PROD /!\
+		function SetNextRoom(state){
     		if (state > 0){
-    			if (selectedRoom < titles.length - 1)
-    				selectedRoom++;
+				if (selectedRoom < titles.length - 1)
+				{
+					selectedRoom++;
+					//Déplace la vue a la salle suivante
+					Needle.findObjectsOfType(Needle.Button)[0].gameObject.getComponent("RotateModule").roomNumber = selectedRoom;
+					Needle.findObjectsOfType(Needle.Button)[0].gameObject.getComponent("RotateModule").nextBool = true;
+					Needle.findObjectsOfType(Needle.Button)[0].gameObject.getComponent("RotateModule").prevBool = false;
+				}
+				else
+				{
+					selectedRoom = 0;
+					Needle.findObjectsOfType(Needle.Button)[0].gameObject.getComponent("RotateModule").roomNumber = selectedRoom;
+					Needle.findObjectsOfType(Needle.Button)[0].gameObject.getComponent("RotateModule").prevBool = true;
+					Needle.findObjectsOfType(Needle.Button)[0].gameObject.getComponent("RotateModule").nextBool = false;
+				}
+
+			}
+			if (state < 0){
+				if (selectedRoom > 0)
+				{
+					selectedRoom--;
+					//Déplace la vue a la salle précédente
+					Needle.findObjectsOfType(Needle.Button)[0].gameObject.getComponent("RotateModule").roomNumber = selectedRoom;
+					Needle.findObjectsOfType(Needle.Button)[0].gameObject.getComponent("RotateModule").prevBool = true;
+					Needle.findObjectsOfType(Needle.Button)[0].gameObject.getComponent("RotateModule").nextBool = false;
+
+				}
     			else
-    				selectedRoom = 0;
-    		}
-    		if (state < 0){
-    			if (selectedRoom > 0)
-    				selectedRoom--;
-    			else
-    				selectedRoom = titles.length - 1;
+				{
+					selectedRoom = titles.length - 1;
+					Needle.findObjectsOfType(Needle.Button)[0].gameObject.getComponent("RotateModule").roomNumber = selectedRoom;
+					Needle.findObjectsOfType(Needle.Button)[0].gameObject.getComponent("RotateModule").nextBool = true;
+					Needle.findObjectsOfType(Needle.Button)[0].gameObject.getComponent("RotateModule").prevBool = false;
+				}
     		}
 			//SwitchRoom(selectedRoom)
     		SetRoom(selectedRoom);
     	}
 
-    	// GO TO RESERV PANEL
-    	function Reserv(state){
+		function SelectRoom(room, state){
+			// State :
+			//    0 ->    no panel shown
+			//    1 ->  left panel shown
+			//    2 -> right panel shown
+
+			selectedRoom = room;
+			SetRoom(selectedRoom);
+
+			if(state == 1)
+			{
+				SetPanelState(true, false);
+				console.log("state 1");
+				//Déplace la caméra en fonction du panel
+				Needle.findObjectOfType(Needle.Camera).gameObject.getComponent("MoveCamera").rightBool = true;
+				Needle.findObjectOfType(Needle.Camera).gameObject.getComponent("MoveCamera").leftBool = false;
+			}
+
+		else if (state == 2)
+			{
+				SetPanelState(false, true);
+				console.log("state 2");
+				//Déplace la caméra en fonction du panel
+				Needle.findObjectOfType(Needle.Camera).gameObject.getComponent("MoveCamera").leftBool = true;
+				Needle.findObjectOfType(Needle.Camera).gameObject.getComponent("MoveCamera").rightBool = false;
+			}
+			else
+				SetPanelState(false, false);
+		}
+		// GO TO RESERV PANEL
+		function Reserv(state){
     		SetPanelState(!state, state);
-    	}
+
+			if (state)
+			{
+				Needle.findObjectOfType(Needle.Camera).gameObject.getComponent("MoveCamera").leftBool = true;
+				Needle.findObjectOfType(Needle.Camera).gameObject.getComponent("MoveCamera").rightBool = false;
+			}
+			else
+			{
+				Needle.findObjectOfType(Needle.Camera).gameObject.getComponent("MoveCamera").leftBool = false;
+				Needle.findObjectOfType(Needle.Camera).gameObject.getComponent("MoveCamera").rightBool = true;
+			}
+		}
+
 
     	// DISPLAY CALENDAR
     	function ShowCalendar(state){

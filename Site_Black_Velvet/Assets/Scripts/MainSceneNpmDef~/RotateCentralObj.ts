@@ -9,7 +9,7 @@ export class RotateCentralobj extends Behaviour {
     directionMultiplier : number = 0;
 
    update(){
-          let isDone: boolean = false;
+          /*let isDone: boolean = false;
         // GET MOUSEWHEEL
         document.addEventListener( 'wheel', (event) => {
             isDone = true;
@@ -38,6 +38,6 @@ export class RotateCentralobj extends Behaviour {
         // DO DAMPING
         if (this.currentVelocity > 0)
             this.currentVelocity -= this.velocityDamping;
-        else this.currentVelocity = 0;
+        else this.currentVelocity = 0;*/
     }
 }

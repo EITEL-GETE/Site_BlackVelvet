@@ -5,7 +5,7 @@ import { Behaviour, serializeable } from "@needle-tools/engine";
 export class OnClickModule extends Behaviour {
 
     onClick(roomNumber) {
-        SelectRoom(roomNumber, 1);
+        //SelectRoom(roomNumber, 1);
     }
     
 }
